@@ -31,13 +31,13 @@ $gridPadding: 10px;
 }
 //make span grid column classes
 @for $i from 1 through $baseGrid {
-  .colSpanWidth#{$i} {
+  .colSpan#{$i} {
     grid-column: span $i;
   }
 }
 //make span grid row classes
 @for $i from 1 through $baseGrid {
-  .colSpanHeight#{$i} {
+  .rowSpan#{$i} {
     grid-row: span $i;
   }
 }
