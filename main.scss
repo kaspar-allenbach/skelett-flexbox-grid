@@ -29,12 +29,27 @@ $gridPadding: 10px;
   grid-template-columns: repeat($baseGrid, 1fr);
   grid-gap: $gridPadding;
 }
+
+
 //make span grid column classes
 @for $i from 1 through $baseGrid {
+  
+  $spanVar: $i;
+  
+  //generate all span classes
   .colSpan#{$i} {
-    grid-column: span $i;
+    grid-column: span $spanVar;
+    
+  }
+  
+  //within the span loop create all offset loops for each span option
+  @for $i from 1 through $baseGrid {
+    .colSpan#{$i}_colOffset#{$spanVar} {
+      grid-column: $i #{'/'} span $spanVar;
+    }
   }
 }
+
 //make span grid row classes
 @for $i from 1 through $baseGrid {
   .rowSpan#{$i} {
