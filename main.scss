@@ -1,8 +1,11 @@
+// variables //
 $baseGrid: 12;
 $gridPadding: 10px;
 
 
-//flexbox model
+// flexbox grid model //
+
+//initiate flexbox model
 .flexGrid {
   display: flex; 
   > .col {
@@ -10,3 +13,14 @@ $gridPadding: 10px;
     padding: $gridPadding;
   }
 }
+
+//flexbox-grid
+@for $i from 1 through $baseGrid {
+  .col#{$i} {
+    flex-basis: (100 / $i + 0% );
+    max-width: (100 / $i + 0% );
+  }
+}
+
+
+// css grid model //
