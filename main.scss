@@ -3,7 +3,7 @@ $baseGrid: 12;
 $gridPadding: 10px;
 
 
-// flexbox grid model //
+// ////////// flexbox grid model ////////// //
 
 //initiate flexbox model
 .flexGrid {
@@ -23,9 +23,21 @@ $gridPadding: 10px;
 }
 
 
-// css grid model //
+// ////////// css grid model ////////// //
 .cssGrid {
   display: grid;
   grid-template-columns: repeat($baseGrid, 1fr);
   grid-gap: $gridPadding;
+}
+//make span grid column classes
+@for $i from 1 through $baseGrid {
+  .colSpanWidth#{$i} {
+    grid-column: span $i;
+  }
+}
+//make span grid row classes
+@for $i from 1 through $baseGrid {
+  .colSpanHeight#{$i} {
+    grid-row: span $i;
+  }
 }
