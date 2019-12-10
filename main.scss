@@ -1,0 +1,12 @@
+$baseGrid: 12;
+$gridPadding: 10px;
+
+
+//flexbox model
+.flexGrid {
+  display: flex; 
+  > .col {
+    flex-grow: 1;
+    padding: $gridPadding;
+  }
+}
