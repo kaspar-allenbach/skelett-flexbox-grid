@@ -51,12 +51,24 @@ You can also define the grid size on the parent element with `flexGrid rowCol{x}
 #### Responsive Row Columns
 You can also add repsonsive row Columns: ```<div class="flexGrid rowCol4 rowColLg4">```
 
-### Utility first vs. css abstraction
+## Utility first vs. css abstraction
 You can also write the whole thing in scss and use your own classes in the html markup:
+
+### Column Row
 ```
 .yourOwnClass {
   @include rowCol(x);
   @include rowColSm(x);
   @include rowColMd(x);
+}
+```
+
+
+### Child element
+```
+.yourOwnClass {
+  @include col(x);
+  @include colSm(x);
+  @include coLg(x);
 }
 ```
