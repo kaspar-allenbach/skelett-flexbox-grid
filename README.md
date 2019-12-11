@@ -102,3 +102,13 @@ Example: `x-md-space-between`or `y-sm-center`
   <div class="col">blabla blabla blabla blabla blabla blabla blabla blabla</div>
 </div>
 ```
+And as always you can also use your own classes like so:
+
+```
+.yourOwnClass {
+  @include x(space-between);
+  @include x-sm(space-evenly);
+  @include x-lg(center);
+}
+```
+
