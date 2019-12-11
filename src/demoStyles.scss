@@ -29,6 +29,9 @@ body {
 h1 {
   font-family: "Inter var", sans-serif;
 }
+code.inline.hljs {
+  display: inline;
+}
 .demo {
   border-radius: 5px;
   padding: 20px;
