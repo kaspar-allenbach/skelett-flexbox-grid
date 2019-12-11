@@ -89,9 +89,11 @@ You can also write the whole thing in scss and use your own classes in the html 
 There are helper classes if you want to position your stuff:
 
 Naming: `.{orientation}-{css-directive}`
+
 Example: `x-space-between`or `y-center`
 
 Responsive Positioning: `.{orientation}-{breakpoint}-{css-directive}`
+
 Example: `x-md-space-between`or `y-sm-center`
 
 ```
