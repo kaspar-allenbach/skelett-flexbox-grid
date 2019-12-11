@@ -9,6 +9,8 @@
 }
 
 .gugusWrapper {
+  margin-right: - $gridPadding;
+  margin-left: - $gridPadding;
   &.outerWrapper {
     @include wrapSizer;
   }

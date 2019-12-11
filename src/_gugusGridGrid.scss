@@ -1,13 +1,13 @@
 // ////////// css grid model ////////// //
 .cssGrid {
   display: grid;
-  grid-template-columns: repeat($baseGrid, 1fr);
+  grid-template-columns: $gridBaseTemplateColumns;
   grid-gap: $gridPadding;
 }
 
 
 //make span grid column classes
-@for $i from 1 through $baseGrid {
+@for $i from 1 through $gridBaseNumber {
   
   $spanVar: $i;
   
@@ -18,7 +18,7 @@
   }
   
   //within the span loop create all offset loops for each span option
-  @for $i from 1 through $baseGrid {
+  @for $i from 1 through $gridBaseNumber {
     .colSpan#{$i}_colOffset#{$spanVar} {
       grid-column: $i #{'/'} span $spanVar;
     }
@@ -26,7 +26,7 @@
 }
 
 //make span grid row classes
-@for $i from 1 through $baseGrid {
+@for $i from 1 through $gridBaseNumber {
   .rowSpan#{$i} {
     grid-row: span $i;
   }

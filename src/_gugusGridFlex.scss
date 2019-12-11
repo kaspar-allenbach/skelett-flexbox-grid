@@ -5,10 +5,10 @@
   flex-wrap: wrap;
   > .col {
     flex-grow: 1;
-    padding: $gridPadding;
+    padding: $gridPadding / 2;
   }
   > [class*="col"] {
-    padding: $gridPadding;
+    padding: $gridPadding / 2;
   }
 }
 
