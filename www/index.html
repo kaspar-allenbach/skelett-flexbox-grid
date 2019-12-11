@@ -65,7 +65,7 @@
       <div class="col1 colMd4 colLg6">full width on default. 1/4 on Md 1/6 on Lg</div>
     </div>
   </code></pre></p>
-				<div class="flexGrid">
+				<div class="flexGrid stackCols">
 					<div class="col4">1/4 element</div>
 					<div class="col4">2/4 element</div>
 					<div class="col4">3/4 element</div>
@@ -180,7 +180,7 @@
     <div class="col"></div>
 
   </div>
-  
+
   <div class="gugusWrapper outerWrapper cssGrid">
     <div class="colSpan3"></div>
     <div class="colSpan4"></div>
@@ -199,7 +199,26 @@
       </div>
       <div class="colSpan6 demo">
 				<h3>Basic css grid</h3>
-				<div class="cssGrid">
+				<div class="cssGrid"><pre><code class="escape html">
+					<div class="colSpan3">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+          <div class="col">blabla</div>
+					<div class="col rowSpan2">blabla</div>
+					<div class="col">blabla</div>
+					<div class="colSpan2">blabla</div>
+          <div class="colSpan4">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+          <div class="col">blabla</div>
+					<div class="col colSpan10_colOffset1">blabla</div> </code> </pre>
+				</div>
+			</div>
+      <div class="colSpan12 demo">
+        <div class="cssGrid">
 					<div class="colSpan3">blabla</div>
 					<div class="col">blabla</div>
 					<div class="col">blabla</div>
@@ -215,9 +234,16 @@
 					<div class="col">blabla</div>
           <div class="col">blabla</div>
 					<div class="col colSpan10_colOffset1">blabla</div>
-				</div>
-			</div>
+      </div>
 		</div>
+
+    <footer class="gugusWrapper outerWrapper">
+      <div class="flexGrid">
+        <div class="col"><a href="">Gugus Grid Github Repo</a></div>
+        <div class="col">npm repo: <a href="">Gugus Grid NPM Page</a></div>
+        <div class="col">Made with ❤️ by: <a href="">Kaspar Allenbach</a></div>
+      </div>
+    </footer>
 
 		<script>
 			$(document).ready(function () {

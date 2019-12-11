@@ -2,7 +2,9 @@
 .flexGrid {
   display: flex; 
   position: relative;
-  flex-wrap: wrap;
+  &.stackCols {
+    flex-wrap: wrap;
+  }
   > .col {
     flex-grow: 1;
     padding: $gridPadding / 2;
