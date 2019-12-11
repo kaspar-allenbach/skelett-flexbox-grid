@@ -7,12 +7,21 @@
     flex-grow: 1;
     padding: $gridPadding;
   }
-  > [class^="col"] {
+  > [class*="col"] {
     padding: $gridPadding;
   }
 }
 
-//flexbox-grid SM
+//flexbox row grids
+@for $i from 1 through $baseGrid {
+  .rowCol#{$i} > [class="col"] {
+    flex-basis: (100 / $i + 0% );
+    max-width: (100 / $i + 0% );
+  }
+}
+
+
+//flexbox-grids
 @for $i from 1 through $baseGrid {
   .col#{$i} {
     flex-basis: (100 / $i + 0% );

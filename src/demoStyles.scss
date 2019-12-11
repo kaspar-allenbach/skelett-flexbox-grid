@@ -35,7 +35,6 @@ h1 {
   background-color: grey;
   margin-bottom: 20px;
   .flexGrid {
-    background-color: #fff;
     &:before {
       content: "row";
       position: absolute;
@@ -44,6 +43,7 @@ h1 {
     }
     > * {
       outline: solid 1px #842;
+      background-color: #475;
     }
   }
 }

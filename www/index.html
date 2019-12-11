@@ -13,10 +13,20 @@
 </head>
 
 <body>
-    <h1>Default Gugus Grid</h1>
-    <div class="gugusWrapper fullWrapper">
+    <div class="gugusWrapper outerWrapper">
+
+      <div class="flexGrid">
+        <div class="col">
+          <h1>Default Gugus Grid</h1>
+          <h2>Flexbox Grid</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="gugusWrapper outerWrapper">
       <div class="demo">
-        <h2>Flex Grid</h2>
+        <h3>Flex Grid</h3>
         <p>The Flex grid with equaly spaced elements</p>
         <div class="flexGrid">
           <div class="col">One Column</div>
@@ -28,7 +38,7 @@
 
     <div class="gugusWrapper outerWrapper">
       <div class="demo">
-        <h2>Defined Width Flex Grid</h2>
+        <h3>Defined Width Flex Grid</h3>
         <p>The Flex grid with elements with defined sizes and variable size</p>
         <div class="flexGrid">
           <div class="col4">1/4 element</div>
@@ -38,20 +48,36 @@
           <div class="col4">1/4 element</div>
           <div class="col4">2/4 element</div>
           <div class="col4">3/4 element</div>
-          <div class="col4">4/4 element</div>
         </div>
       </div>
     </div>
 
-    <div class="gugusWrapper innerWrapper">
+    <div class="gugusWrapper outerWrapper">
       <div class="demo">
-        <h2>Combined Flex Grid</h2>
+        <h3>Combined Flex Grid</h3>
         <p>The Flex grid with elements with defined sizes and variable size</p>
         <div class="flexGrid">
           <div class="col">fill the gap</div>
           <div class="col6">1/6 element</div>
           <div class="col">fill the gap</div>
           <div class="col4">1/4 element</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gugusWrapper outerWrapper">
+      <div class="demo">
+        <h3>Row Columns</h3>
+        <p>You can also add rowCol* to the parent to create a grid</p>
+        <div class="flexGrid rowCol6">
+          <div class="col">blabla</div>
+          <div class="col">blabla</div>
+          <div class="col">blabla</div>
+          <div class="col">blabla</div>
+          <div class="col">blabla</div>
+          <div class="col">blabla</div>
+          <div class="col">blabla</div>
+          <div class="col2">1/4 element</div>
         </div>
       </div>
     </div>
