@@ -1,0 +1,16 @@
+//initiate flexbox model
+.flexGrid {
+  display: flex; 
+  > .col {
+    flex-grow: 1;
+    padding: $gridPadding;
+  }
+}
+
+//flexbox-grid
+@for $i from 1 through $baseGrid {
+  .col#{$i} {
+    flex-basis: (100 / $i + 0% );
+    max-width: (100 / $i + 0% );
+  }
+}

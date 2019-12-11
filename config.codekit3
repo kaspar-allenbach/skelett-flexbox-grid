@@ -9,10 +9,18 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,
-		"oAP": "/build/node_modules",
+		"oAP": "/dist/node_modules",
 		"oF": 0
 		},
 	"/package-lock.json": {
@@ -50,6 +58,71 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/src/_gugusGridFlex.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/www/dist/_gugusGridFlex.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/_gugusGridGrid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/www/dist/_gugusGridGrid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/_gugusGridVars.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/www/dist/_gugusGridVars.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/_gugusGridWrappinator.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/www/dist/_gugusGridWrappinator.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/demoStyles.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/www/dist/demoStyles.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/gugusGrid.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -58,55 +131,52 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/dist/gugusGrid.css",
+		"oAP": "/www/dist/gugusGrid.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/gugusGridFlex.scss": {
+	"/www/dist/demoStyles.css": {
 		"aP": 1,
 		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "/dist/gugusGridFlex.css",
+		"oAP": "/www/dist/demoStyles-min.css",
 		"oF": 0,
-		"oS": 3,
-		"uL": 1
+		"oS": 3
 		},
-	"/src/gugusGridGrid.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/dist/gugusGridGrid.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/src/gugusGridVars.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "/dist/gugusGridVars.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/www/index.html": {
+	"/www/dist/demoStyles.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
+		"oAP": "/www/dist/demoStyles.css.map",
+		"oF": 0
+		},
+	"/www/dist/gugusGrid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/www/dist/gugusGrid-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/www/dist/gugusGrid.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/www/dist/gugusGrid.css.map",
+		"oF": 0
+		},
+	"/www/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 1,
+		"oA": 1,
 		"oAP": "/www/index.html",
 		"oF": 0
 		}
@@ -415,7 +485,7 @@
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 0,
-	"buildFolderName": "build",
+	"buildFolderName": "dist",
 	"cleanBuild": 1,
 	"coffeeLintFlags2": {
 		"arrow_spacing": {
@@ -2116,7 +2186,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "/dist",
+		"autoOutputPathRelativePath": "www/dist",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 1,
@@ -2183,6 +2253,17 @@
 		"targetECMAVersion": 0
 		},
 	"languageDefaultsUserDefined": [
+		{
+			"autoOutputAction": 1,
+			"autoOutputPathFilenamePattern": "*.html",
+			"autoOutputPathRelativePath": "",
+			"autoOutputPathReplace1": "",
+			"autoOutputPathReplace2": "",
+			"autoOutputPathStyle": 0,
+			"fileExtension": "html",
+			"shouldRunCacheBuster": 0,
+			"shouldRunHTMLMinifier": 1
+			}
 		],
 	"npmAbbreviatedPath": "",
 	"npmCreatePackageLock": 1,
@@ -2194,8 +2275,8 @@
 	"rollupExternals": "",
 	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
-	"sourceFolderName": "source",
+	"skippedFoldersString": "/storage/framework/sessions,node_modules,_logs,logs,log,.idea,_cache,cache,.html",
+	"sourceFolderName": "src",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,
 	"tsAllowUnreachableCode": 0,
