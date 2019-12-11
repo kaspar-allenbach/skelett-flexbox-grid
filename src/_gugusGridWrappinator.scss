@@ -9,8 +9,8 @@
 }
 
 .gugusWrapper {
-  margin-right: - $gridPadding;
-  margin-left: - $gridPadding;
+  display: block;
+  position: relative;
   &.fullWrapper {
     @include lgUp {
       max-width: $baseWrapSize;

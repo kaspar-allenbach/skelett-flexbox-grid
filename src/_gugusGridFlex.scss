@@ -2,18 +2,19 @@
 .flexGrid {
   display: flex; 
   position: relative;
-  &.stackCols {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: - $gridPadding;
+  margin-left: - $gridPadding;
+  > * {
+    padding: $gridPadding / 2;
   }
   > .col {
     flex-grow: 1;
-    padding: $gridPadding / 2;
+    
   }
   > [class*="col"] {
-    padding: $gridPadding / 2;
   }
 }
-
 //flexbox row grids
 @for $i from 1 through $baseGrid {
   .rowCol#{$i} > [class="col"] {

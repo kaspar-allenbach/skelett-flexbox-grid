@@ -6,6 +6,5 @@
 @import "gugusGridFlex";
 
 .yourOwnClass {
-  
   @include rowCol(3);
 }
