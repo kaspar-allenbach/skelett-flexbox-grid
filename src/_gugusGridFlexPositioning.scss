@@ -1,0 +1,41 @@
+//orientation position helper classes
+$flexPosOptions: center, space-around, space-between, space-evenly, flex-start, flex-end;
+
+@each $param in $flexPosOptions {
+  .x-#{$param} {
+    justify-content: $param;
+  }
+  .y-#{$param} {
+    align-items: $param;
+  }
+}
+@each $param in $flexPosOptions {
+  @include smUp {
+    .x-sm-#{$param} {
+      justify-content: $param;
+    }
+    .y-sm-#{$param} {
+      align-items: $param;
+    }
+  }
+}
+@each $param in $flexPosOptions {
+  @include mdUp {
+    .x-md-#{$param} {
+      justify-content: $param;
+    }
+    .y-md-#{$param} {
+      align-items: $param;
+    }
+  }
+}
+@each $param in $flexPosOptions {
+  @include lgUp {
+    .x-lg-#{$param} {
+      justify-content: $param;
+    }
+    .y-lg-#{$param} {
+      align-items: $param;
+    }
+  }
+}

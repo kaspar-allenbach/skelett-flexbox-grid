@@ -4,6 +4,7 @@
 @import "gugusGridWrappinator";
 @import "gugusGridGrid";
 @import "gugusGridFlex";
+@import "gugusGridFlexPositioning";
 
 .yourOwnClass {
   @include rowCol(3);

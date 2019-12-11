@@ -1,16 +1,15 @@
 //initiate flexbox model
 .flexGrid {
-  display: flex; 
+  display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin-right: - $gridPadding;
-  margin-left: - $gridPadding;
+  margin-right: -$gridPadding;
+  margin-left: -$gridPadding;
   > * {
     padding: $gridPadding / 2;
   }
   > .col {
     flex-grow: 1;
-    
   }
   > [class*="col"] {
   }
@@ -18,49 +17,48 @@
 //flexbox row grids
 @for $i from 1 through $baseGrid {
   .rowCol#{$i} > [class="col"] {
-    flex-basis: (100 / $i + 0% );
-    max-width: (100 / $i + 0% );
+    flex-basis: (100 / $i + 0%);
+    max-width: (100 / $i + 0%);
   }
 }
 @include smUp {
   @for $i from 1 through $baseGrid {
     .rowColSm#{$i} > [class="col"] {
-      flex-basis: (100 / $i + 0% );
-      max-width: (100 / $i + 0% );
+      flex-basis: (100 / $i + 0%);
+      max-width: (100 / $i + 0%);
     }
   }
 }
 @include mdUp {
   @for $i from 1 through $baseGrid {
     .rowColMd#{$i} > [class="col"] {
-      flex-basis: (100 / $i + 0% );
-      max-width: (100 / $i + 0% );
+      flex-basis: (100 / $i + 0%);
+      max-width: (100 / $i + 0%);
     }
   }
 }
 @include lgUp {
   @for $i from 1 through $baseGrid {
     .rowColLg#{$i} > [class="col"] {
-      flex-basis: (100 / $i + 0% );
-      max-width: (100 / $i + 0% );
+      flex-basis: (100 / $i + 0%);
+      max-width: (100 / $i + 0%);
     }
   }
 }
-
 // flexbox row mixins
 @mixin rowCol($colParam: 1) {
   @extend .flexGrid;
   [class="col"] {
-    flex-basis: (100 / $colParam + 0% );
-    max-width: (100 / $colParam + 0% );
+    flex-basis: (100 / $colParam + 0%);
+    max-width: (100 / $colParam + 0%);
   }
 }
 @mixin rowColSm($colParam: 1) {
   @extend .flexGrid;
   @include smUp {
     [class="col"] {
-      flex-basis: (100 / $colParam + 0% );
-      max-width: (100 / $colParam + 0% );
+      flex-basis: (100 / $colParam + 0%);
+      max-width: (100 / $colParam + 0%);
     }
   }
 }
@@ -68,8 +66,8 @@
   @extend .flexGrid;
   @include smUp {
     [class="col"] {
-      flex-basis: (100 / $colParam + 0% );
-      max-width: (100 / $colParam + 0% );
+      flex-basis: (100 / $colParam + 0%);
+      max-width: (100 / $colParam + 0%);
     }
   }
 }
@@ -77,8 +75,8 @@
   @extend .flexGrid;
   @include smUp {
     [class="col"] {
-      flex-basis: (100 / $colParam + 0% );
-      max-width: (100 / $colParam + 0% );
+      flex-basis: (100 / $colParam + 0%);
+      max-width: (100 / $colParam + 0%);
     }
   }
 }
@@ -86,31 +84,56 @@
 //flexbox-grid-columns
 @for $i from 1 through $baseGrid {
   .col#{$i} {
-    flex-basis: (100 / $i + 0% );
-    max-width: (100 / $i + 0% );
+    flex-basis: (100 / $i + 0%);
+    max-width: (100 / $i + 0%);
   }
 }
 @include smUp {
   @for $i from 1 through $baseGrid {
     .colSm#{$i} {
-      flex-basis: (100 / $i + 0% );
-      max-width: (100 / $i + 0% );
+      flex-basis: (100 / $i + 0%);
+      max-width: (100 / $i + 0%);
     }
   }
 }
 @include mdUp {
   @for $i from 1 through $baseGrid {
     .colMd#{$i} {
-      flex-basis: (100 / $i + 0% );
-      max-width: (100 / $i + 0% );
+      flex-basis: (100 / $i + 0%);
+      max-width: (100 / $i + 0%);
     }
   }
 }
 @include lgUp {
   @for $i from 1 through $baseGrid {
     .colMd#{$i} {
-      flex-basis: (100 / $i + 0% );
-      max-width: (100 / $i + 0% );
+      flex-basis: (100 / $i + 0%);
+      max-width: (100 / $i + 0%);
     }
   }
 }
+//column elements mixin
+@mixin col($colParam: 1) {
+  flex-basis: (100 / $i + 0%);
+  max-width: (100 / $i + 0%);
+}
+
+@mixin colSm($colParam: 1) {
+  @include smUp {
+    flex-basis: (100 / $i + 0%);
+    max-width: (100 / $i + 0%);
+  }
+}
+@mixin colMd($colParam: 1) {
+  @include smUp {
+    flex-basis: (100 / $i + 0%);
+    max-width: (100 / $i + 0%);
+  }
+}
+@mixin colLg($colParam: 1) {
+  @include smUp {
+    flex-basis: (100 / $i + 0%);
+    max-width: (100 / $i + 0%);
+  }
+}
+
