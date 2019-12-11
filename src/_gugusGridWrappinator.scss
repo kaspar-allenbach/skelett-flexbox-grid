@@ -1,1 +1,18 @@
 // ////////// gugus grid wrappinator ////////// //
+@mixin wrapSizer($innerOuterModifier: 2) {
+  max-width: $baseWrapSize;
+  padding: 0 $gridPadding;
+  margin: 0 auto;
+  @include smUp {
+    padding: 0 $gridPadding * $innerOuterModifier;
+  }
+}
+
+.gugusWrapper {
+  &.outerWrapper {
+    @include wrapSizer;
+  }
+  &.innerWrapper {
+    @include wrapSizer(10);
+  }
+}

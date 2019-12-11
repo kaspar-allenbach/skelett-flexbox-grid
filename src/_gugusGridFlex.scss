@@ -1,16 +1,45 @@
 //initiate flexbox model
 .flexGrid {
   display: flex; 
+  position: relative;
+  flex-wrap: wrap;
   > .col {
     flex-grow: 1;
     padding: $gridPadding;
   }
+  > [class^="col"] {
+    padding: $gridPadding;
+  }
 }
 
-//flexbox-grid
+//flexbox-grid SM
 @for $i from 1 through $baseGrid {
   .col#{$i} {
     flex-basis: (100 / $i + 0% );
     max-width: (100 / $i + 0% );
+  }
+}
+@include smUp {
+  @for $i from 1 through $baseGrid {
+    .colSm#{$i} {
+      flex-basis: (100 / $i + 0% );
+      max-width: (100 / $i + 0% );
+    }
+  }
+}
+@include mdUp {
+  @for $i from 1 through $baseGrid {
+    .colMd#{$i} {
+      flex-basis: (100 / $i + 0% );
+      max-width: (100 / $i + 0% );
+    }
+  }
+}
+@include lgUp {
+  @for $i from 1 through $baseGrid {
+    .colMd#{$i} {
+      flex-basis: (100 / $i + 0% );
+      max-width: (100 / $i + 0% );
+    }
   }
 }

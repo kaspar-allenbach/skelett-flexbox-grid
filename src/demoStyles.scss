@@ -7,13 +7,43 @@ html {
     font-family: "Inter var", sans-serif;
   }
 }
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+  *,
+  *::before,
+  *::after {
+      -webkit-box-sizing: inherit;
+         -moz-box-sizing: inherit;
+              box-sizing: inherit;
+  }
+
+body {
+  padding: 0;
+  margin: 0;
+}
 
 h1 {
   font-family: "Inter var", sans-serif;
 }
 .demo {
-  border: solid 1px red;
   border-radius: 5px;
   padding: 20px;
   background-color: grey;
+  margin-bottom: 20px;
+  .flexGrid {
+    background-color: #fff;
+    &:before {
+      content: "row";
+      position: absolute;
+      font-size: 10px;
+      top: -15px;
+    }
+    > * {
+      outline: solid 1px #842;
+    }
+  }
 }
