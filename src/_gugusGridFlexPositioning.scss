@@ -39,3 +39,43 @@ $flexPosOptions: center, space-around, space-between, space-evenly, flex-start, 
     }
   }
 }
+
+@mixin x-($orientationParam) {
+  justify-content: $orientationParam;
+}
+@mixin x-sm-($orientationParam) {
+  @include smUp {
+    justify-content: $orientationParam;
+  }
+}
+@mixin x-md-($orientationParam) {
+  @include mdUp {
+    justify-content: $orientationParam;
+  }
+}
+@mixin x-lg-($orientationParam) {
+  @include lgUp {
+    justify-content: $orientationParam;
+  }
+}
+
+
+
+@mixin y($orientationParam) {
+  align-items: $orientationParam;
+}
+@mixin y-sm-($orientationParam) {
+  @include smUp {
+    align-items: $orientationParam;
+  }
+}
+@mixin y-md-($orientationParam) {
+  @include mdUp {
+    align-items: $orientationParam;
+  }
+}
+@mixin y-lg-($orientationParam) {
+  @include lgUp {
+    align-items: $orientationParam;
+  }
+}
