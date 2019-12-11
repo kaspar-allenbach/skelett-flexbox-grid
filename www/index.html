@@ -139,9 +139,65 @@
 		</div>
 
     <div class="gugusWrapper outerWrapper">
-      <h2>CSS Grid</h2>
-      <p>Css grid is so powerful and complex it is imho best used without a framework. This approach here doesn't come close to what is possible.</p>
-			<div class="demo">
+      <h2>Wrappers</h2>
+      <div class="flexGrid rowCol3">
+        <div class="col">
+          <p>There ar also wrapper classes to contain the grids.</p>
+          <p>There are three wrapper types: <code class="inline">.innerWrapper</code>, <code class="inline">.outerWrapper</code>, <code class="inline">.fullWrapper</code></p>
+        </div>
+        <div class="col">
+          <p>All Wrappers lock at the size: <code class="inline">$baseWrapSize</code></p>
+          <p>All wrappers are the same width on mobile with a padding size of <code class="inline">$gridPadding</code></p>
+        </div>
+        <div class="col">
+          <p>
+            <strong>Inner Wrapper</strong> <br>
+            the inner wraper has 10x padding of the outer wrapper.
+          </p>
+          <p>
+            <strong>Outer Wrapper</strong> <br>
+            The standard Wrapper
+          </p>
+          <p>
+            <strong>Full Wrapper</strong> <br>
+            Locks at <code class="inline">$lgUp</code> but other than that goes alway full width.
+          </p>
+        </div>
+        <div class="col1">
+          <h4>Examples</h4>
+          <pre><code class="escape html">
+  <div class="gugusWrapper outerWrapper"></div>
+  <div class="gugusWrapper innerWrapper"></div>
+  <div class="gugusWrapper fullWrapper"></div>
+
+  <div class="gugusWrapper outerWrapper flexGrid">
+    <div class="col"></div>
+
+    <div class="col"></div>
+
+    <div class="col"></div>
+
+    <div class="col"></div>
+
+  </div>
+  
+  <div class="gugusWrapper outerWrapper cssGrid">
+    <div class="colSpan3"></div>
+    <div class="colSpan4"></div>
+    <div class="colSpan10_colOffset1"></div>
+    <div class="col"></div>
+  </div>
+</code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="gugusWrapper outerWrapper cssGrid">
+      <div class="colSpan6">
+        <h2>CSS Grid</h2>
+        <p>Css grid is so powerful and complex it is imho best used without a framework. This approach here doesn't come close to what is possible. <br>
+        It is also pretty close to old float based layout concepts. But once you get the hang of it I would advise to deviate from that concept and build it closer to your data-architecture. Yep I ❤ css grid.</p>
+      </div>
+      <div class="colSpan6 demo">
 				<h3>Basic css grid</h3>
 				<div class="cssGrid">
 					<div class="colSpan3">blabla</div>

@@ -11,6 +11,13 @@
 .gugusWrapper {
   margin-right: - $gridPadding;
   margin-left: - $gridPadding;
+  &.fullWrapper {
+    @include lgUp {
+      max-width: $baseWrapSize;
+      padding: 0 $gridPadding;
+      margin: 0 auto;
+    }
+  }
   &.outerWrapper {
     @include wrapSizer;
   }
