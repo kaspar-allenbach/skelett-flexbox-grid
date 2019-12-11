@@ -1,7 +1,20 @@
 # gugus-grid
 Minimal grid
 
-This is a bare-bones approach for a css-only forntend grid without the fuss and overhead of current frameworks
+This is a bare-bones approach for a css-only forntend grid without the fuss and overhead of current frameworks.
+
+## Customisation
+For customisation adjust the following variables:
+```
+// all classes are generated from this numer
+
+  $baseGrid: 12; 
+  
+ // the gap between the flexbox elements
+ // (the outer gap is reset by negative margins)
+ 
+  $gridPadding: 10px; 
+```
 
 ## Flebox Grid
 
