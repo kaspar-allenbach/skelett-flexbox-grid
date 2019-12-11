@@ -24,10 +24,12 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background: #262626;
 }
 
-h1 {
+h1, h2, h4, p, body {
   font-family: "Inter var", sans-serif;
+  color: #e8e8e8;
 }
 code.inline.hljs {
   display: inline;
@@ -35,9 +37,15 @@ code.inline.hljs {
 .demo {
   border-radius: 5px;
   padding: 20px;
-  background-color: grey;
+  border-bottom: 4px dashed #e8e8e8;
   margin-bottom: 20px;
+  pre code {
+    margin-bottom: 40px;
+    border-radius: 5px;
+  }
   .flexGrid, .yourOwnClass {
+    padding: 5px;
+    outline: 1px dashed pink;
     &:before {
       content: "row";
       position: absolute;
@@ -45,8 +53,7 @@ code.inline.hljs {
       top: -15px;
     }
     > * {
-      outline: solid 1px #842;
-      background-color: #475;
+      outline: dotted 1px yellow;
     }
   }
 }
