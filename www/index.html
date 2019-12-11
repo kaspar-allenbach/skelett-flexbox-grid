@@ -116,6 +116,27 @@
 			</div>
 		</div>
 
+    <div class="gugusWrapper outerWrapper">
+			<div class="demo">
+				<h3>CSS Abstraction</h3>
+				<p>Instead of utility classes you can also use mixins with your own classes.</p>
+        <p>
+          <pre><code class="escape">.yourOwnClass {
+  @include rowCol(x);
+  @include rowColSm(x);
+  @include rowColMd(x);
+}</code></pre>
+        </p>
+				<div class="yourOwnClass">
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+					<div class="col">blabla</div>
+				</div>
+			</div>
+		</div>
+
 		<script>
 			$(document).ready(function () {
 $("code").each(function (i, block) {

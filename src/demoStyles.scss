@@ -37,7 +37,7 @@ code.inline.hljs {
   padding: 20px;
   background-color: grey;
   margin-bottom: 20px;
-  .flexGrid {
+  .flexGrid, .yourOwnClass {
     &:before {
       content: "row";
       position: absolute;

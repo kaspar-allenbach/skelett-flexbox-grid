@@ -44,7 +44,43 @@
   }
 }
 
-//flexbox-grids
+// flexbox row mixins
+@mixin rowCol($colParam: 1) {
+  @extend .flexGrid;
+  [class="col"] {
+    flex-basis: (100 / $colParam + 0% );
+    max-width: (100 / $colParam + 0% );
+  }
+}
+@mixin rowColSm($colParam: 1) {
+  @extend .flexGrid;
+  @include smUp {
+    [class="col"] {
+      flex-basis: (100 / $colParam + 0% );
+      max-width: (100 / $colParam + 0% );
+    }
+  }
+}
+@mixin rowColMd($colParam: 1) {
+  @extend .flexGrid;
+  @include smUp {
+    [class="col"] {
+      flex-basis: (100 / $colParam + 0% );
+      max-width: (100 / $colParam + 0% );
+    }
+  }
+}
+@mixin rowColLg($colParam: 1) {
+  @extend .flexGrid;
+  @include smUp {
+    [class="col"] {
+      flex-basis: (100 / $colParam + 0% );
+      max-width: (100 / $colParam + 0% );
+    }
+  }
+}
+
+//flexbox-grid-columns
 @for $i from 1 through $baseGrid {
   .col#{$i} {
     flex-basis: (100 / $i + 0% );

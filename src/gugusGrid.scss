@@ -4,3 +4,8 @@
 @import "gugusGridWrappinator";
 @import "gugusGridGrid";
 @import "gugusGridFlex";
+
+.yourOwnClass {
+  
+  @include rowCol(3);
+}
