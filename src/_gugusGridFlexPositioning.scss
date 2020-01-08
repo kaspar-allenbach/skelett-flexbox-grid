@@ -1,6 +1,17 @@
 //orientation position helper classes
 $flexPosOptions: center, space-around, space-between, space-evenly, flex-start, flex-end;
 
+$flexDirectionOptions: column, row, column-reverse, row-reverse;
+
+
+//flex direction
+@each $param in $flexDirectionOptions {
+  .flex-direction__#{$param} {
+    flex-direction: $param;
+  }
+}
+
+//flex-position
 @each $param in $flexPosOptions {
   .x-#{$param} {
     justify-content: $param;
