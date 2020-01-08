@@ -4,15 +4,3 @@ $gridPadding: 10px;
 $namingConvention: '-';
 
 $baseWrapSize: 1200px;
-
-// ////////// gugus css grid vars ////////// //
-
-// is used to generate all span classes 
-// needs to correespond with the number of grid lines from $gridBaseColumns
-$gridBaseNumber: 12; 
-
-//adjust to your need.
-// just make sure your number of grid lines are the same as $gridBaseNumber
-$gridBaseTemplateColumns: repeat($gridBaseNumber, 1fr);
-
-$gridBaseTemplateRows: auto;
