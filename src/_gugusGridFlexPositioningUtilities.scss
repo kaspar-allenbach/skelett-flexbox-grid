@@ -1,5 +1,6 @@
 //orientation position variables
-$flexPosOptions: center, space-around, space-between, space-evenly, flex-start, flex-end;
+$flexPosXOptions: center, space-around, space-between, space-evenly, flex-start, flex-end;
+$flexPosYOptions: center, flex-start, flex-end;
 
 //flex basis modifier
 .o-flex {
@@ -12,14 +13,27 @@ $flexPosOptions: center, space-around, space-between, space-evenly, flex-start, 
 }
 
 //flex-position
-@each $param in $flexPosOptions {
+@each $param in $flexPosXOptions {
   .u-x--#{$param} { justify-content: $param; }
 }
-@each $param in $flexPosOptions {
+@each $param in $flexPosXOptions {
   @include smUp { .u-x--smUp--#{$param} {justify-content: $param;} }
   @include mdUp { .u-x--mdUp--#{$param} {justify-content: $param;} }
   @include lgUp { .u-x--lgUp--#{$param} {justify-content: $param;} }
   @include smDown { .u-x--smDown--#{$param} {justify-content: $param;} }
   @include mdDown { .u-x--mdDown--#{$param} {justify-content: $param;} }
   @include lgDown { .u-x--lgDown--#{$param} {justify-content: $param;} }
+}
+
+//flex-position
+@each $param in $flexPosYOptions {
+  .u-y--#{$param} { align-items: $param; }
+}
+@each $param in $flexPosYOptions {
+  @include smUp { .u-y--smUp--#{$param} {align-items: $param;} }
+  @include mdUp { .u-y--mdUp--#{$param} {align-items: $param;} }
+  @include lgUp { .u-y--lgUp--#{$param} {align-items: $param;} }
+  @include smDown { .u-y--smDown--#{$param} {align-items: $param;} }
+  @include mdDown { .u-y--mdDown--#{$param} {align-items: $param;} }
+  @include lgDown { .u-y--lgDown--#{$param} {align-items: $param;} }
 }
