@@ -1,0 +1,25 @@
+//orientation position variables
+$flexPosOptions: center, space-around, space-between, space-evenly, flex-start, flex-end;
+
+//flex basis modifier
+.o-flex {
+  &.u-col--basis__auto {
+     [class="o-col"] {
+      flex-basis: auto;
+      flex-grow: 0;
+    }
+  }
+}
+
+//flex-position
+@each $param in $flexPosOptions {
+  .u-x--#{$param} { justify-content: $param; }
+}
+@each $param in $flexPosOptions {
+  @include smUp { .u-x--smUp--#{$param} {justify-content: $param;} }
+  @include mdUp { .u-x--mdUp--#{$param} {justify-content: $param;} }
+  @include lgUp { .u-x--lgUp--#{$param} {justify-content: $param;} }
+  @include smDown { .u-x--smDown--#{$param} {justify-content: $param;} }
+  @include mdDown { .u-x--mdDown--#{$param} {justify-content: $param;} }
+  @include lgDown { .u-x--lgDown--#{$param} {justify-content: $param;} }
+}

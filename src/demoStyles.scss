@@ -1,5 +1,5 @@
 @import url("https://rsms.me/inter/inter.css");
-@import url("gugusGrid");
+@import "gugusGrid";
 
 html {
   font-family: "Inter", sans-serif;
@@ -66,12 +66,5 @@ code.inline.hljs {
   }
   [class^="o-col"] {
     @include e-before;
-  }
-}
-
-.yourOwnClass {
-  @extend .o-flex;
-  .helloImaLayoutFlexboxClass {
-    // @extend %o-col;
   }
 }

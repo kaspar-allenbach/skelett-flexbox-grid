@@ -44,41 +44,6 @@
       }
     }
   }
-  // flexbox row mixins
-  @mixin rowCol($colParam: 1) {
-    @extend .o-flex;
-    [class^="col"] {
-      flex-basis: (100 / $colParam + 0%);
-      max-width: (100 / $colParam + 0%);
-    }
-  }
-  @mixin rowColSm($colParam: 1) {
-    @extend .o-flex;
-    @include smUp {
-      [class^="col"] {
-        flex-basis: (100 / $colParam + 0%);
-        max-width: (100 / $colParam + 0%);
-      }
-    }
-  }
-  @mixin rowColMd($colParam: 1) {
-    @extend .o-flex;
-    @include smUp {
-      [class^="col"] {
-        flex-basis: (100 / $colParam + 0%);
-        max-width: (100 / $colParam + 0%);
-      }
-    }
-  }
-  @mixin rowColLg($colParam: 1) {
-    @extend .o-flex;
-    @include smUp {
-      [class^="col"] {
-        flex-basis: (100 / $colParam + 0%);
-        max-width: (100 / $colParam + 0%);
-      }
-    }
-  }
 
   //flexbox-grid-columns
   @for $i from 1 through $baseGrid {
@@ -113,34 +78,6 @@
         max-width: (100 / $i + 0%);
         position: relative;
       }
-    }
-  }
-  //column elements mixin
-  @mixin o-col($colParam: 1) {
-    flex-basis: (100 / $i + 0%);
-    max-width: (100 / $i + 0%);
-    position: relative;
-  }
-
-  @mixin o-col__sm($colParam: 1) {
-    @include smUp {
-      flex-basis: (100 / $i + 0%);
-      max-width: (100 / $i + 0%);
-      position: relative;
-    }
-  }
-  @mixin o-col__md($colParam: 1) {
-    @include smUp {
-      flex-basis: (100 / $i + 0%);
-      max-width: (100 / $i + 0%);
-      position: relative;
-    }
-  }
-  @mixin o-col__lg($colParam: 1) {
-    @include smUp {
-      flex-basis: (100 / $i + 0%);
-      max-width: (100 / $i + 0%);
-      position: relative;
     }
   }
 }

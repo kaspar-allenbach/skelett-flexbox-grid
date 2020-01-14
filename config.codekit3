@@ -35,24 +35,6 @@
 		"oAP": "/dist/demoStyles.css.map",
 		"oF": 0
 		},
-	"/dist/gugusGrid.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/dist/gugusGrid-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/dist/gugusGrid.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dist/gugusGrid.css.map",
-		"oF": 0
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -74,10 +56,10 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "/node_modules/gugus-media-queries/gugus-media-queries.scss",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"/package-lock.json": {
@@ -125,10 +107,10 @@
 		"oA": 1,
 		"oAP": "/dist/_gugusGridFlex.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexModifiers.scss": {
+	"/src/_gugusGridFlexDirectionUtilities.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -136,9 +118,22 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexModifiers.css",
+		"oAP": "/dist/_gugusGridFlexDirectionUtilities.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
+		"uL": 1
+		},
+	"/src/_gugusGridFlexPositioningUtilities.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_gugusGridFlexPositioningUtilities.css",
+		"oF": 0,
+		"oS": 1,
 		"uL": 1
 		},
 	"/src/_gugusGridVars.scss": {
@@ -151,7 +146,7 @@
 		"oA": 1,
 		"oAP": "/dist/_gugusGridVars.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"/src/_gugusGridWrappinator.scss": {
@@ -164,7 +159,7 @@
 		"oA": 1,
 		"oAP": "/dist/_gugusGridWrappinator.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"/src/demoStyles.scss": {
@@ -177,7 +172,7 @@
 		"oA": 0,
 		"oAP": "/dist/demoStyles.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		},
 	"/src/gugusGrid.scss": {
@@ -190,7 +185,7 @@
 		"oA": 1,
 		"oAP": "/dist/gugusGrid.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"uL": 1
 		}
 	},
@@ -2206,7 +2201,7 @@
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 3,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
