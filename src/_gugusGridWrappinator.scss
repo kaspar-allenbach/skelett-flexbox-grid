@@ -8,20 +8,20 @@
   }
 }
 
-.gugusWrapper {
+.o-wrapper {
   display: block;
   position: relative;
-  &.fullWrapper {
+  &.o-full-wrapper {
     @include lgUp {
       max-width: $baseWrapSize;
       padding: 0 $gridPadding;
       margin: 0 auto;
     }
   }
-  &.outerWrapper {
+  &.o-outer-wrapper {
     @include wrapSizer;
   }
-  &.innerWrapper {
+  &.o-inner-wrapper {
     @include wrapSizer(10);
   }
 }

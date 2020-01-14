@@ -1,4 +1,6 @@
 @import url("https://rsms.me/inter/inter.css");
+@import url("gugusGrid");
+
 html {
   font-family: "Inter", sans-serif;
 }
@@ -26,7 +28,14 @@ body {
   margin: 0;
   background: #262626;
 }
-
+@mixin e-before() {
+  &:before {
+    content: attr(data-class-name);
+    position: absolute;
+    font-size: 10px;
+    top: -15px;
+  }
+}
 h1, h2, h4, p, body {
   font-family: "Inter var", sans-serif;
   color: #e8e8e8;
@@ -44,17 +53,25 @@ code.inline.hljs {
     margin-bottom: 40px;
     border-radius: 5px;
   }
-  .flexGrid, .yourOwnClass, .cssGrid {
-    padding: 5px;
+  .o-flex {
+    margin: 20px 0;
+  }
+  .o-flex, .yourOwnClass, .cssGrid {
+    padding: 20px;
     outline: 1px dashed pink;
-    &:before {
-      content: "row";
-      position: absolute;
-      font-size: 10px;
-      top: -15px;
-    }
+    @include e-before;
     > * {
       outline: dotted 1px yellow;
     }
+  }
+  [class^="o-col"] {
+    @include e-before;
+  }
+}
+
+.yourOwnClass {
+  @extend .o-flex;
+  .helloImaLayoutFlexboxClass {
+    // @extend %o-col;
   }
 }

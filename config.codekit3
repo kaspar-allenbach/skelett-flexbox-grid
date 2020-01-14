@@ -17,6 +17,50 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/dist/demoStyles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dist/demoStyles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dist/demoStyles.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/demoStyles.css.map",
+		"oF": 0
+		},
+	"/dist/gugusGrid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dist/gugusGrid-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dist/gugusGrid.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/gugusGrid.css.map",
+		"oF": 0
+		},
+	"/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 1,
+		"oA": 1,
+		"oAP": "/index.html",
+		"oF": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -30,8 +74,8 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
-		"oAP": "/www/dist/gugus-media-queries.css",
+		"oA": 2,
+		"oAP": "/node_modules/gugus-media-queries/gugus-media-queries.scss",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -79,12 +123,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/www/dist/_gugusGridFlex.css",
+		"oAP": "/dist/_gugusGridFlex.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexPositioning.scss": {
+	"/src/_gugusGridFlexModifiers.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -92,20 +136,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/www/dist/_gugusGridFlexPositioning.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/src/_gugusGridGrid.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/www/dist/_gugusGridGrid.css",
+		"oAP": "/dist/_gugusGridFlexModifiers.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -118,7 +149,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/www/dist/_gugusGridVars.css",
+		"oAP": "/dist/_gugusGridVars.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -131,7 +162,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/www/dist/_gugusGridWrappinator.css",
+		"oAP": "/dist/_gugusGridWrappinator.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -144,7 +175,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/www/dist/demoStyles.css",
+		"oAP": "/dist/demoStyles.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -156,55 +187,11 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
-		"oAP": "/www/dist/gugusGrid.css",
+		"oA": 1,
+		"oAP": "/dist/gugusGrid.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
-		},
-	"/www/dist/demoStyles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/www/dist/demoStyles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/www/dist/demoStyles.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/www/dist/demoStyles.css.map",
-		"oF": 0
-		},
-	"/www/dist/gugusGrid.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/www/dist/gugusGrid-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/www/dist/gugusGrid.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/www/dist/gugusGrid.css.map",
-		"oF": 0
-		},
-	"/www/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 1,
-		"oA": 1,
-		"oAP": "/www/index.html",
-		"oF": 0
 		}
 	},
 "hooks": [
@@ -2212,7 +2199,7 @@
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.css",
-		"autoOutputPathRelativePath": "www/dist",
+		"autoOutputPathRelativePath": "dist",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 1,

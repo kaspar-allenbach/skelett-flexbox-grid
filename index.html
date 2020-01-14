@@ -1,0 +1,258 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+	<head>
+		<meta charset="utf-8">
+		<title>GUGUS Grid</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/dist/gugusGrid.css">
+		<link rel="stylesheet" href="/dist/demoStyles.css">
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/css.min.js" integrity="sha256-Q2fdeVsbumvzTK/ZSxmMoTE9ALaRYwyLAZGfpuuWOxE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atelier-forest-dark.min.css"/>
+	</head>
+
+	<body>
+		<div class="gugusWrapper outerWrapper">
+
+			<div class="gg_c-flex">
+				<div class="col1">
+					<h1>Gugus Grid</h1>
+					<p>This is a minimal grid framework. The Flexbox Grid is veryvery similar to the bootstrap grid but without the overhead. It is supposed to be a bare-bones grid which you can adapt to your needs without framework bloat. Just a flexbox & css grid and thats it. (Gugus: Peek-a-Boo in Swiss German)</p>
+					<h2>Flexbox Grid</h2>
+				</div>
+				<div class="col1">
+					<p>Define the amount of Columns via
+						<code class="inline">$baseGrid</code>. This will generate all classes you need.
+						<br>
+						Example:
+						<code class="inline">$baseGrid: 15;</code>
+						will generate a grid with 15 Columns and all related cllasses for you to work with.
+						<br>
+						Media Queries: All media query related classes use
+						<a href="https://www.npmjs.com/package/gugus-media-queries">gugus-media-queries</a>. See the docs for Media Breakpoints.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="gugusWrapper outerWrapper">
+			<div class="demo">
+				<h3>Flex Grid</h3>
+				<p>The Flex grid with equaly spaced elements</p>
+				<br>
+				<div class="o-flex" data-class-name="'.o-flex' initiate flexbox model">
+					<div class="o-col" data-class-name="'o-col' equaly spaced flexbox child">One Column</div>
+					<div class="o-col"data-class-name="'o-col' equaly spaced flexbox child">Two Column</div>
+					<div class="o-col"data-class-name="'o-col' equaly spaced flexbox child">Jemand mußte Josef K. verleumdet haben, denn ohne daß er etwas Böses getan hätte, wurde er
+												eines Morgens verhaftet. Die Köchin der Frau Grubach, seiner Zimmervermieterin, die ihm jeden
+												Tag gegen acht Uhr früh das Frühstück brachte, kam diesmal nicht. Das war noch niemals
+												geschehen. K. wartete noch ein Weilchen, sah von seinem Kopfkissen aus die alte Frau, die ihm
+												gegenüber wohnte und die ihn mit einer an ihr ganz ungewöhnlichen Neugierde beobachtete, dann
+												aber, gleichzeitig befremdet und hungrig, läutete er. Sofort klopfte es und ein Mann, den er in dieser
+												Wohnung noch niemals gesehen hatte, trat ein.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gugusWrapper outerWrapper">
+			<div class="demo">
+				<h3>Defined Width Flex Grid</h3>
+				<p>The Flex grid with precentage based width's</p>
+				<div class="o-flex" data-class-name="'.o-flex' initiate flexbox model">
+					<div class="o-col--4 o-col-sm-12" data-class-name="'.o-col--4' add precentage based class">1/4 element</div>
+					<div class="o-col--4 o-col-sm-12" data-class-name="'.o-col-sm-12' add responsive override class">1/4 element</div>
+					<div class="o-col--4" data-class-name="'.o-col--4'">1/4 element</div>
+					<div class="o-col--4" data-class-name="'.o-col--4'">Jemand mußte Josef K. verleumdet haben, denn ohne daß er etwas Böses getan hätte, wurde er eines Morgens verhaftet. Die Köchin der Frau Grubach, seiner Zimmervermieterin, die ihm jeden Tag gegen acht Uhr früh das Frühstück brachte, kam diesmal nicht. Das war noch niemals geschehen. K. wartete noch ein Weilchen, sah von seinem Kopfkissen aus die alte Frau, die ihm gegenüber wohnte und die ihn mit einer an ihr ganz ungewöhnlichen Neugierde beobachtete, dann aber, gleichzeitig befremdet und hungrig, läutete er. Sofort klopfte es und ein Mann, den er in dieser Wohnung noch niemals gesehen hatte, trat ein.</div>
+					<div class="o-col--4" data-class-name="'.o-col--4'">1/4 element</div>
+					<div class="o-col--4" data-class-name="'.o-col--4'">1/4 element</div>
+					<div class="o-col" data-class-name="'.o-col' mix with undefined width class">undefined with element. just add .o-col</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gugusWrapper outerWrapper">
+			<div class="demo">
+				<h3>Combined Flex Grid</h3>
+				<p>The Flex grid with elements with defined sizes and variable size</p>
+				<div class="o-flex" data-class-name="'.o-flex' initiate flexbox model">
+					<div class="o-col" data-class-name="'.o-col' fill the void width">undefined with</div>
+					<div class="o-col--4" data-class-name="'.o-col-4' a quarter of the total width">>.o-col--4</div>
+					<div class="o-col--9">.o-col--9</div>
+					<div class="o-col" data-class-name="'.o-col' fill the void width">.o-col</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gugusWrapper outerWrapper">
+			<div class="demo">
+				<h3>Row Columns</h3>
+				<p>You can also add rowCol* to the parent to create a grid. In case you don't want to repeat yourself.</p>
+				<div class="o-flex o-row--col__6" data-class-name="'.o-flex .o-row-col__6'">
+					<div class="o-col" data-class-name="'.o-col'">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+				</div>
+				<h3>Mixed Row Columns</h3>
+				<p>You can override child elements if needed</p>
+				<div class="o-flex o-row--col__4" data-class-name="'.o-flex .o-row-col__6'">
+					<div class="o-col" data-class-name="'.o-col'">blabla</div>
+					<div class="o-col" data-class-name="'.o-col'">blabla</div>
+					<div class="o-col" data-class-name="'.o-col'">blabla</div>
+					<div class="o-col" data-class-name="'.o-col'">blabla</div>
+					<div class="o-col--2" data-class-name="'.o-col--2'">Hi. I'm a full width column</div>
+					<div class="o-col" data-class-name="'.o-col'">blabla</div>
+					<div class="o-col" data-class-name="'.o-col'">blabla</div>
+				</div>
+				<p>There are media query classes avalable</p>
+				<div class="o-flex o-row--col__sm-3" data-class-name="'.o-flex .o-row--col__sm-3'">
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla</div>
+					<div class="o-col">blabla blabla blabla blabla blabla blabla</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gugusWrapper outerWrapper">
+			<div class="demo">
+				<h3>CSS Abstraction</h3>
+				<p>Instead of utility classes you can also use mixins with your own classes.</p>
+				<p>
+					<pre><code class="escape">.yourOwnClass {
+  @include rowCol(x);
+  @include rowColSm(x);
+  @include rowColMd(x);
+}</code></pre>
+				</p>
+				<div class="yourOwnClass">
+					<div class="helloImaLayoutFlexboxClass">blabla</div>
+					<div class="helloImaLayoutFlexboxClass">blabla</div>
+					<div class="helloImaLayoutFlexboxClass">blabla</div>
+					<div class="helloImaLayoutFlexboxClass">blabla</div>
+					<div class="helloImaLayoutFlexboxClass">blabla</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gugusWrapper outerWrapper">
+			<div class="demo">
+				<h3>Positioning utilities</h3>
+				<div class="flexGrid rowCol3 x-md-space-between">
+					<div class="col">
+						<p>blabla</p>
+					</div>
+					<div class="col">blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blablablabla blabla blabla blabla blabla blabla blabla blablablabla blabla blabla blabla blabla blabla blabla blabla</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="gugusWrapper outerWrapper">
+			<h2>Wrappers</h2>
+			<div class="flexGrid">
+				<div class="col">
+					<p>There ar also wrapper classes to contain the grids.</p>
+					<p>There are three wrapper types:
+						<code class="inline">.innerWrapper</code>,
+						<code class="inline">.outerWrapper</code>,
+						<code class="inline">.fullWrapper</code>
+					</p>
+					<p>All Wrappers lock at the size:
+						<code class="inline">$baseWrapSize</code>
+					</p>
+					<p>All wrappers are the same width on mobile with a padding size of
+						<code class="inline">$gridPadding</code>
+					</p>
+				</div>
+				<div class="col">
+					<p>
+						<strong>Inner Wrapper</strong>
+						<br>
+						the inner wraper has 10x padding of the outer wrapper.
+					</p>
+					<p>
+						<strong>Outer Wrapper</strong>
+						<br>
+						The standard Wrapper
+					</p>
+					<p>
+						<strong>Full Wrapper</strong>
+						<br>
+						Locks at
+						<code class="inline">$lgUp</code>
+						but other than that goes alway full width.
+					</p>
+				</div>
+				<div class="col1">
+					<h4>Examples</h4>
+					<pre><code class="escape html">
+  <div class="gugusWrapper outerWrapper"></div>
+  <div class="gugusWrapper innerWrapper"></div>
+  <div class="gugusWrapper fullWrapper"></div>
+
+  <div class="gugusWrapper outerWrapper flexGrid">
+    <div class="col"></div>
+
+    <div class="col"></div>
+
+    <div class="col"></div>
+
+    <div class="col"></div>
+
+  </div>
+
+  <div class="gugusWrapper outerWrapper flexGrid">
+    <div class="colSpan3"></div>
+    <div class="colSpan4"></div>
+    <div class="colSpan10_colOffset1"></div>
+    <div class="col"></div>
+  </div>
+</code></pre>
+				</div>
+			</div>
+		</div>
+		<footer class="gugusWrapper outerWrapper">
+			<div class="flexGrid">
+				<div>
+					<p>Github:
+						<a href="">Github Repo</a>
+					</p>
+				</div>
+				<div>
+					<p>Npm:
+						<a href="">NPM Page</a>
+					</p>
+				</div>
+				<div>
+					<p>Made with ❤️ by:
+						<a href="">Kaspar Allenbach</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			$(document).ready(function () {
+$("code").each(function (i, block) {
+hljs.highlightBlock(block);
+});
+document.querySelectorAll("code.escape").forEach(function (element) {
+element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+});
+});
+		</script>
+	</body>
+
+</html>
