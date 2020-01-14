@@ -53,12 +53,12 @@
 		</div>
 		<div class="o-wrapper o-outer-wrapper demo">
 			<div class="o-flex" data-class-name="'.o-flex' initiate flexbox model">
-				<div class="o-col-4 o-col-sm-12" data-class-name="'.o-col-4' add precentage based class">1/4 element</div>
-				<div class="o-col-4 o-col-sm-12" data-class-name="'.o-col-sm-12' add responsive override class">1/4 element</div>
-				<div class="o-col-4" data-class-name="'.o-col-4'">1/4 element</div>
-				<div class="o-col-4" data-class-name="'.o-col-4'">Jemand mußte Josef K. verleumdet haben, denn ohne daß er etwas Böses getan hätte, wurde er eines Morgens verhaftet. Die Köchin der Frau Grubach, seiner Zimmervermieterin, die ihm jeden Tag gegen acht Uhr früh das Frühstück brachte, kam diesmal nicht. Das war noch niemals geschehen. K. wartete noch ein Weilchen, sah von seinem Kopfkissen aus die alte Frau, die ihm gegenüber wohnte und die ihn mit einer an ihr ganz ungewöhnlichen Neugierde beobachtete, dann aber, gleichzeitig befremdet und hungrig, läutete er. Sofort klopfte es und ein Mann, den er in dieser Wohnung noch niemals gesehen hatte, trat ein.</div>
-				<div class="o-col-4" data-class-name="'.o-col-4'">1/4 element</div>
-				<div class="o-col-4" data-class-name="'.o-col-4'">1/4 element</div>
+				<div class="o-col-3" data-class-name="'.o-col-3' add precentage based class">1/4 element</div>
+				<div class="o-col-3" data-class-name="'.o-col-3'">1/4 element</div>
+				<div class="o-col-3" data-class-name="'.o-col-3'">1/4 element</div>
+				<div class="o-col-3" data-class-name="'.o-col-3'">Jemand mußte Josef K. verleumdet haben, denn ohne daß er etwas Böses getan hätte, wurde er eines Morgens verhaftet. Die Köchin der Frau Grubach, seiner Zimmervermieterin, die ihm jeden Tag gegen acht Uhr früh das Frühstück brachte, kam diesmal nicht. Das war noch niemals geschehen. K. wartete noch ein Weilchen, sah von seinem Kopfkissen aus die alte Frau, die ihm gegenüber wohnte und die ihn mit einer an ihr ganz ungewöhnlichen Neugierde beobachtete, dann aber, gleichzeitig befremdet und hungrig, läutete er. Sofort klopfte es und ein Mann, den er in dieser Wohnung noch niemals gesehen hatte, trat ein.</div>
+				<div class="o-col-3" data-class-name="'.o-col-3'">1/4 element</div>
+				<div class="o-col-3" data-class-name="'.o-col-3'">1/4 element</div>
 				<div class="o-col" data-class-name="'.o-col' mix with undefined width class">undefined with element. just add .o-col</div>
 			</div>
 		</div>
@@ -70,7 +70,7 @@
 			<div class="o-flex" data-class-name="'.o-flex' initiate flexbox model">
 				<div class="o-col" data-class-name="'.o-col' fill the void width">undefined with</div>
 				<div class="o-col-4" data-class-name="'.o-col-4' a quarter of the total width">.o-col-4</div>
-				<div class="o-col-9">.o-col-9</div>
+				<div class="o-col-9" data-class-name="'.o-col-9'">.o-col-9</div>
 				<div class="o-col" data-class-name="'.o-col' fill the void width">.o-col</div>
 			</div>
 		</div>
@@ -102,7 +102,7 @@
 				<div class="o-col" data-class-name="'.o-col'">blabla</div>
 				<div class="o-col" data-class-name="'.o-col'">blabla</div>
 				<div class="o-col-2" data-class-name="'.o-col-2'">Hi. I'm a full width column</div>
-				<div class="o-col" data-class-name="'.o-col'">blabla</div>
+				<div class="o-col" data-class-name="'.o-col'">This col is not defined but because there is a definition in the parent element it won't fill the remainding space. instead it keeps the row sizing</div>
 				<div class="o-col" data-class-name="'.o-col'">blabla</div>
 			</div>
 		</div>
@@ -193,19 +193,19 @@
 		</div>
 		<div class="o-wrapper o-outer-wrapper demo">
 			<div class="o-flex" data-class-name="'.o-flex'">
-				<div class="o-col o-col-order-2" data-class-name="'.o-col-order-2'">
+				<div class="o-col u-col-order-2" data-class-name="'.u-col-order-2'">
 					<p>First in dom, second visually</p>
 				</div>
-				<div class="o-col o-col-order-1" data-class-name="'.o-col-order-1'">
+				<div class="o-col u-col-order-1" data-class-name="'.u-col-order-1'">
 					<p>Second in dom, first visually</p>
 				</div>
-				<div class="o-col o-col-order-3" data-class-name="'.o-col-order-3'">
+				<div class="o-col u-col-order-3" data-class-name="'.u-col-order-3'">
 					<p>third</p>
 				</div>
-				<div class="o-col o-col-order-4" data-class-name="'.o-col-order-4'">
+				<div class="o-col u-col-order-4" data-class-name="'.u-col-order-4'">
 					<p>fourth</p>
 				</div>
-				<div class="o-col o-col-order-5" data-class-name="'.o-col-order-5'">
+				<div class="o-col u-col-order-5" data-class-name="'.u-col-order-5'">
 					<p>fifth</p>
 				</div>
 			</div>
@@ -250,17 +250,50 @@
 				</div>
 			</div>
 		</div>
-		<div class="o-wrapper o-inner-wrapper">
-			<h2>Reference</h2>
-			<p>All avalable classes</p>
-		</div>
 		<div class="o-wrapper o-outer-wrapper">
 			<div class="o-flex reference">
 				<div class="o-col-12"><h3>Flexbox Container Classes</h3></div>
 				<div class="o-col-2"><code>.o-flex</code></div>
 				<div class="o-col-10">Initiates the Flexbox Library</div>
-				<div class="o-col-2"><code>.o-row-col-X</code></div>
+				<div class="o-col-2"><code>.o-flex-mmQq</code></div>
+				<div class="o-col-10">Initiates the Flexbox Library based on screen size (<code>.smUp</code>, <code>.mdUp</code>, <code>.lgDown</code> <a href="https://www.npmjs.com/package/gugus-media-queries">Media Query Library</a> )</div>
+				<div class="o-col-2"><code>.o-row-col-#</code></div>
 				<div class="o-col-10">Add the grid with to the parent element if you don't want to define it on the child</div>
+				<div class="o-col-12"><h3>Flexbox Children Classes</h3></div>
+				<div class="o-col-2"><code>.o-col</code></div>
+				<div class="o-col-10">Standard class. Makes equal width elements</div>
+				<div class="o-col-2"><code>.o-col-#</code></div>
+				<div class="o-col-10">Creates element width of # (Default to 12 grid)</div>
+				<div class="o-col-2"><code>.o-col-mmQq-#</code></div>
+				<div class="o-col-10">Apply media query based element width's</div>
+				<div class="o-col-12"><h3>Flexbox directional Classes</h3></div>
+				<div class="o-col-2"><code>.u-direction-#</code></div>
+				<div class="o-col-10">Applies <code>flex-direction</code> parameters. Use css property syntax for # (row, row-reverse …)</div>
+				<div class="o-col-2"><code>.u-direction-mmQq-#</code></div>
+				<div class="o-col-10">Applies Media Query based directional directives</div>
+				<div class="o-col-12">
+						<h3>Flexbox Spacing Classes</h3>
+						<p>Spacing classes start with <code>.u-x-</code> and <code>.u-y-</code> signaling the X and Y axis.</p>
+				</div>
+				<div class="o-col-2"><code>.u-x-#</code></div>
+				<div class="o-col-10">Applies <code>justify-content</code> parameters. Use css property syntax for # (space-around, space-between…). These classes only work when <code>.u-col-basis-auto</code> is applied to the parent (removing <code>flex-basis: 1</code>)</div>
+				<div class="o-col-2"><code>.u-x-mmQq-#</code></div>
+				<div class="o-col-10">Applies Media Query based directional directives</div>
+				<div class="o-col-2"><code>.u-y-#</code></div>
+				<div class="o-col-10">Applies <code>align-items</code> to the child elements. Use css property syntax instead of</div>
+				<div class="o-col-2"><code>.u-y-mmQq-#</code></div>
+				<div class="o-col-10">Blablabla Responsive blablabla</div>
+				<div class="o-col-12"><h3>Flexbox Order Classes</h3></div>
+				<div class="o-col-2"><code>.u-col-order-#</code></div>
+				<div class="o-col-10">Reorder elements visually</div>
+				<div class="o-col-2"><code>.u-col-order-mmQq-#</code></div>
+				<div class="o-col-10">Reorder elements visually based on media queries</div>
+				<h3 class="o-col-12">Special Utilities</h3>
+				<div class="o-col-2"><code>.u-col-basis-auto</code></div>
+				<div class="o-col-10">Sets back <code>flex-basis</code> meaning the elements will default to inner content width. Nexessery for Y-axis spacing.</div>
+				<h3 class="o-col-12">Missing utilities</h3>
+				<div class="o-col-2"><code>.u-img</code></div>
+				<div class="o-col-10">Image sizing is a bitt special in flexbox. Coming soon.</div>
 			</div>
 		</div>
 		<div class="colorWrap">

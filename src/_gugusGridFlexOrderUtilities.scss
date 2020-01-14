@@ -1,16 +1,16 @@
 //create order classes
   @for $i from 1 through $baseGrid {
-    &.o-col-order-#{$i} {
+    &.u-col-order-#{$i} {
       order: $i;
     }
   }
 
   @for $i from 1 through $baseGrid {
-    @include smUp { .o-col-order-smUp-#{$i} {order: $i;} }
-    @include mdUp { .o-col-order-mdUp-#{$i} {order: $i;} }
-    @include lgUp { .o-col-order-lgUp-#{$i} {order: $i;} }
+    @include smUp { .u-col-order-smUp-#{$i} {order: $i;} }
+    @include mdUp { .u-col-order-mdUp-#{$i} {order: $i;} }
+    @include lgUp { .u-col-order-lgUp-#{$i} {order: $i;} }
 
-    @include smUp { .o-col-order-smDown-#{$i} {order: $i;} }
-    @include mdUp { .o-col-order-mdDown-#{$i} {order: $i;} }
-    @include lgUp { .o-col-order-lgDown-#{$i} {order: $i;} }
+    @include smUp { .u-col-order-smDown-#{$i} {order: $i;} }
+    @include mdUp { .u-col-order-mdDown-#{$i} {order: $i;} }
+    @include lgUp { .u-col-order-lgDown-#{$i} {order: $i;} }
   }
