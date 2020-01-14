@@ -1,0 +1,31 @@
+//flexbox row grids
+@for $i from 1 through $baseGrid {
+  &.o-row-col-#{$i} > [class="o-col"] {
+    flex-basis: ($i / $baseGrid * 100 + 0%);
+    max-width: ($i / $baseGrid * 100 + 0%);
+  }
+}
+@include smUp {
+  @for $i from 1 through $baseGrid {
+    &.o-row-col-sm-#{$i} > [class="o-col"] {
+      flex-basis: ($i / $baseGrid * 100 + 0%);
+      max-width: ($i / $baseGrid * 100 + 0%);
+    }
+  }
+}
+@include mdUp {
+  @for $i from 1 through $baseGrid {
+    &.o-row-col-md-#{$i} > [class="o-col"] {
+      flex-basis: ($i / $baseGrid * 100 + 0%);
+      max-width: ($i / $baseGrid * 100 + 0%);
+    }
+  }
+}
+@include lgUp {
+  @for $i from 1 through $baseGrid {
+    &.o-row-col-lg-#{$i} > [class="o-col"] {
+      flex-basis: ($i / $baseGrid * 100 + 0%);
+      max-width: ($i / $baseGrid * 100 + 0%);
+    }
+  }
+}

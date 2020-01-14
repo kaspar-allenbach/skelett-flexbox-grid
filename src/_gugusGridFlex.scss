@@ -1,5 +1,5 @@
 //initiate flexbox model
-.o-flex {
+@mixin flexUtility {
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -13,71 +13,14 @@
     flex-basis: 0;
     position: relative;
   }
-  //flexbox row grids
-  @for $i from 1 through $baseGrid {
-    &.o-row--col__#{$i} > [class="o-col"] {
-      flex-basis: (100 / $i + 0%);
-      max-width: (100 / $i + 0%);
-    }
-  }
-  @include smUp {
-    @for $i from 1 through $baseGrid {
-      &.o-row--col__sm-#{$i} > [class="o-col"] {
-        flex-basis: (100 / $i + 0%);
-        max-width: (100 / $i + 0%);
-      }
-    }
-  }
-  @include mdUp {
-    @for $i from 1 through $baseGrid {
-      &.o-row--col__md-#{$i} > [class="o-col"] {
-        flex-basis: (100 / $i + 0%);
-        max-width: (100 / $i + 0%);
-      }
-    }
-  }
-  @include lgUp {
-    @for $i from 1 through $baseGrid {
-      &.o-row--col__lg-#{$i} > [class="o-col"] {
-        flex-basis: (100 / $i + 0%);
-        max-width: (100 / $i + 0%);
-      }
-    }
-  }
-
-  //flexbox-grid-columns
-  @for $i from 1 through $baseGrid {
-    .o-col--#{$i} {
-      flex-basis: (100 / $i + 0%);
-      max-width: (100 / $i + 0%);
-      position: relative;
-    }
-  }
-  @include smUp {
-    @for $i from 1 through $baseGrid {
-      .o-col--sm--#{$i} {
-        flex-basis: (100 / $i + 0%);
-        max-width: (100 / $i + 0%);
-        position: relative;
-      }
-    }
-  }
-  @include mdUp {
-    @for $i from 1 through $baseGrid {
-      .col__md#{$i} {
-        flex-basis: (100 / $i + 0%);
-        max-width: (100 / $i + 0%);
-        position: relative;
-      }
-    }
-  }
-  @include lgUp {
-    @for $i from 1 through $baseGrid {
-      .col__lg#{$i} {
-        flex-basis: (100 / $i + 0%);
-        max-width: (100 / $i + 0%);
-        position: relative;
-      }
-    }
-  }
 }
+
+.o-flex { @include flexUtility; }
+
+@include smUp { .o-flex-smUp { @include flexUtility; } }
+@include mdUp { .o-flex-mdUp { @include flexUtility; } }
+@include lgUp { .o-flex-lgUp { @include flexUtility; } }
+
+@include smDown { .o-flex-smUp { @include flexUtility; } }
+@include mdDown { .o-flex-mdUp { @include flexUtility; } }
+@include lgDown { .o-flex-lgUp { @include flexUtility; } }

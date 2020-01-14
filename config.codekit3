@@ -110,6 +110,19 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"/src/_gugusGridFlexColumn.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_gugusGridFlexColumn.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"/src/_gugusGridFlexDirectionUtilities.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -123,6 +136,19 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"/src/_gugusGridFlexOrderUtilities.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_gugusGridFlexOrderUtilities.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"/src/_gugusGridFlexPositioningUtilities.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -132,6 +158,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/dist/_gugusGridFlexPositioningUtilities.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/src/_gugusGridFlexRow.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_gugusGridFlexRow.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1

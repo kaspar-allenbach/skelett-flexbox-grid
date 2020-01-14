@@ -1,0 +1,35 @@
+//flexbox-grid-columns
+@for $i from 1 through $baseGrid {
+  .o-col-#{$i} {
+    flex-basis: (100 * $i + 0%);
+    max-width: ($i / $baseGrid * 100 + 0%);
+    position: relative;
+  }
+}
+@include smUp {
+  @for $i from 1 through $baseGrid {
+    .o-col-sm-#{$i} {
+      flex-basis: ($i / $baseGrid * 100 + 0%);
+      max-width: ($i / $baseGrid * 100 + 0%);
+      position: relative;
+    }
+  }
+}
+@include mdUp {
+  @for $i from 1 through $baseGrid {
+    .col-md#{$i} {
+      flex-basis: ($i / $baseGrid * 100 + 0%);
+      max-width: ($i / $baseGrid * 100 + 0%);
+      position: relative;
+    }
+  }
+}
+@include lgUp {
+  @for $i from 1 through $baseGrid {
+    .col-lg#{$i} {
+      flex-basis: ($i / $baseGrid * 100 + 0%);
+      max-width: ($i / $baseGrid * 100 + 0%);
+      position: relative;
+    }
+  }
+}

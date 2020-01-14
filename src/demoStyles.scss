@@ -11,22 +11,34 @@ html {
 }
 html {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-  *,
-  *::before,
-  *::after {
-      -webkit-box-sizing: inherit;
-         -moz-box-sizing: inherit;
-              box-sizing: inherit;
-  }
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+$bgColor: #e8e8e8;
+$txtColor: black;
+$txtInvert: green;
+$beforeColor: white;
+
+$flexColor: #9097fb;
+$colColor: #f5d8ba;
+
+.shadow {
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.37);
+}
 
 body {
   padding: 0;
   margin: 0;
-  background: #262626;
+  background: $bgColor;
 }
 @mixin e-before() {
   &:before {
@@ -34,37 +46,59 @@ body {
     position: absolute;
     font-size: 10px;
     top: -15px;
+    color: $beforeColor;
+    background: $txtColor;
+    padding: 3px;
   }
 }
-h1, h2, h4, p, body {
+h1,
+h2,
+h4,
+p,
+body {
   font-family: "Inter var", sans-serif;
-  color: #e8e8e8;
+  color: $txtColor;
   margin: 0;
 }
 code.inline.hljs {
   display: inline;
 }
-.demo {
+pre code {
+  margin-bottom: 40px;
   border-radius: 5px;
-  border-bottom: 4px dashed #e8e8e8;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  pre code {
-    margin-bottom: 40px;
-    border-radius: 5px;
+}
+footer {
+  margin: 0;
+  padding: 0;
+}
+.o-flex {
+}
+.demo > .o-flex {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: $flexColor;
+  @extend .shadow;
+  @include e-before;
+  > * {
+    background-color: $colColor;
+    @extend .shadow;
+    outline: 1px solid $bgColor;
   }
-  .o-flex {
-    margin: 20px 0;
+}
+.colorWrap {
+  background-color: $txtColor;
+  margin-top: 50px;
+  padding: 50px;
+  p, a {
+    color: $txtInvert;
   }
-  .o-flex, .yourOwnClass, .cssGrid {
-    padding: 20px;
-    outline: 1px dashed pink;
-    @include e-before;
-    > * {
-      outline: dotted 1px yellow;
-    }
-  }
-  [class^="o-col"] {
-    @include e-before;
+}
+[data-class-name] {
+  @include e-before;
+}
+.reference {
+  background-color: #fff;
+  > div {
+    border-bottom: 1px solid #000;
   }
 }
