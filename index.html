@@ -218,7 +218,7 @@
 			</p>
 		</div>
 		<div class="o-wrapper o-outer-wrapper demo">
-			<div class="o-flex" data-class-name="'.o-flex'">
+			<div class="o-flex u-gap-true" data-class-name="'.o-flex'">
 				<div class="o-col u-grow-true">
 					<img src="https://placeimg.com/640/480/animals">
 				</div>
@@ -274,7 +274,7 @@
 				<div class="o-col-12"><h3>Flexbox Container Classes</h3></div>
 				<div class="o-col-2"><code>.o-flex</code></div>
 				<div class="o-col-10">Initiates the Flexbox Library</div>
-				<div class="o-col-2"><code>.o-flex-mmQq</code></div>
+				<div class="o-col-2"><code>.o-flex-mediaQuery</code></div>
 				<div class="o-col-10">Initiates the Flexbox Library based on screen size (<code>.smUp</code>, <code>.mdUp</code>, <code>.lgDown</code> <a href="https://www.npmjs.com/package/gugus-media-queries">Media Query Library</a> )</div>
 				<div class="o-col-2"><code>.o-row-col-#</code></div>
 				<div class="o-col-10">Add the grid with to the parent element if you don't want to define it on the child</div>
@@ -283,12 +283,12 @@
 				<div class="o-col-10">Standard class. Makes equal width elements</div>
 				<div class="o-col-2"><code>.o-col-#</code></div>
 				<div class="o-col-10">Creates element width of # (Default to 12 grid)</div>
-				<div class="o-col-2"><code>.o-col-mmQq-#</code></div>
+				<div class="o-col-2"><code>.o-col-mediaQuery-#</code></div>
 				<div class="o-col-10">Apply media query based element width's</div>
 				<div class="o-col-12"><h3>Flexbox directional Classes</h3></div>
 				<div class="o-col-2"><code>.u-direction-#</code></div>
 				<div class="o-col-10">Applies <code>flex-direction</code> parameters. Use css property syntax for # (row, row-reverse …)</div>
-				<div class="o-col-2"><code>.u-direction-mmQq-#</code></div>
+				<div class="o-col-2"><code>.u-direction-mediaQuery-#</code></div>
 				<div class="o-col-10">Applies Media Query based directional directives</div>
 				<div class="o-col-12">
 						<h3>Flexbox Spacing Classes</h3>
@@ -296,16 +296,16 @@
 				</div>
 				<div class="o-col-2"><code>.u-x-#</code></div>
 				<div class="o-col-10">Applies <code>justify-content</code> parameters. Use css property syntax for # (space-around, space-between…). These classes only work when <code>.u-col-basis-auto</code> is applied to the parent (removing <code>flex-basis: 1</code>)</div>
-				<div class="o-col-2"><code>.u-x-mmQq-#</code></div>
+				<div class="o-col-2"><code>.u-x-mediaQuery-#</code></div>
 				<div class="o-col-10">Applies Media Query based directional directives</div>
 				<div class="o-col-2"><code>.u-y-#</code></div>
 				<div class="o-col-10">Applies <code>align-items</code> to the child elements. Use css property syntax instead of</div>
-				<div class="o-col-2"><code>.u-y-mmQq-#</code></div>
+				<div class="o-col-2"><code>.u-y-mediaQuery-#</code></div>
 				<div class="o-col-10">Blablabla Responsive blablabla</div>
 				<div class="o-col-12"><h3>Flexbox Order Classes</h3></div>
 				<div class="o-col-2"><code>.u-col-order-#</code></div>
 				<div class="o-col-10">Reorder elements visually</div>
-				<div class="o-col-2"><code>.u-col-order-mmQq-#</code></div>
+				<div class="o-col-2"><code>.u-col-order-mediaQuery-#</code></div>
 				<div class="o-col-10">Reorder elements visually based on media queries</div>
 				<h3 class="o-col-12">Special Utilities</h3>
 				<div class="o-col-2"><code>.u-col-basis-auto</code></div>
@@ -319,8 +319,13 @@
 				<div class="o-col-10">Allowes element to grow</div>
 				<div class="o-col-2"><code>.u-grow-false</code></div>
 				<div class="o-col-10">Doesn't allow element to grow</div>
-				<div class="o-col-2"><code>.u-grow-mmQq-#</code></div>
+				<div class="o-col-2"><code>.u-grow-mediaQuery-#</code></div>
 				<div class="o-col-10">Also possible to use with media queries</div>
+				<h3 class="o-col-12">Gap Utilities</h3>
+				<div class="o-col-2"><code>.u-grid-gap-true</code></div>
+				<div class="o-col-10">Ads a gap to all children of <code>.o-flex</code> with padding to the child and negative margin on the parent (same hack as bootstrap). gap size is <code>$gridGap</code></div>
+				<div class="o-col-2"><code>.u-grid-gap-mediaQuery-true</code></div>
+				<div class="o-col-10">Mediaquery based grid gap</div>
 			</div>
 		</div>
 		<div class="colorWrap">

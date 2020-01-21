@@ -78,7 +78,6 @@ img {
 }
 .demo > .o-flex {
   padding: 20px;
-  margin: 20px 0;
   background-color: $flexColor;
   @extend .shadow;
   @include e-before;
