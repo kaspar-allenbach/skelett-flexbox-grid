@@ -1,0 +1,107 @@
+//flex-basis: default size
+// flex-shrink: how much is the element allowed to grow (0 == not allowed to shrink)
+// flex-grow: how buch is the element alowed to shrink (0 == not allowed to grow)
+
+//create order classes
+
+// first make the non responsive classes
+[class^="o-col"] {
+  &.u-shrink-true {
+    flex-shrink: 1;
+  }
+  &.u-shrink-false {
+    flex-shrink: 0;
+  }
+
+  &.u-grow-true {
+    flex-grow: 1;
+  }
+  &.u-grow-false {
+    flex-grow: 0;
+  }
+
+  @include smUp {
+    &.u-shrink-smUp-true {
+      flex-shrink: 1;
+    }
+    &.u-shrink-smUp-false {
+      flex-shrink: 0;
+    }
+    &.u-grow-smUp-true {
+      flex-grow: 1;
+    }
+    &.u-grow-smUp-false {
+      flex-grow: 0;
+    }
+  }
+  @include mdUp {
+    &.u-shrink-mdUp-true {
+      flex-shrink: 1;
+    }
+    &.u-shrink-mdUp-false {
+      flex-shrink: 0;
+    }
+    &.u-grow-mdUp-true {
+      flex-grow: 1;
+    }
+    &.u-grow-mdUp-false {
+      flex-grow: 0;
+    }
+  }
+  @include lgUp {
+    &.u-shrink-lgUp-true {
+      flex-shrink: 1;
+    }
+    &.u-shrink-lgUp-false {
+      flex-shrink: 0;
+    }
+    &.u-grow-lgUp-true {
+      flex-grow: 1;
+    }
+    &.u-grow-lgUp-false {
+      flex-grow: 0;
+    }
+  }
+  @include smDown {
+    &.u-shrink-smDown-true {
+      flex-shrink: 1;
+    }
+    &.u-shrink-smDown-false {
+      flex-shrink: 0;
+    }
+    &.u-grow-smDown-true {
+      flex-grow: 1;
+    }
+    &.u-grow-smDown-false {
+      flex-grow: 0;
+    }
+  }
+  @include mdDown {
+    &.u-shrink-smDown-true {
+      flex-shrink: 1;
+    }
+    &.u-shrink-smDown-false {
+      flex-shrink: 0;
+    }
+    &.u-grow-smDown-true {
+      flex-grow: 1;
+    }
+    &.u-grow-smDown-false {
+      flex-grow: 0;
+    }
+  }
+  @include lgDown {
+    &.u-shrink-lgDown-true {
+      flex-shrink: 1;
+    }
+    &.u-shrink-lgDown-false {
+      flex-shrink: 0;
+    }
+    &.u-grow-lgDown-true {
+      flex-grow: 1;
+    }
+    &.u-grow-lgDown-false {
+      flex-grow: 0;
+    }
+  }
+}
