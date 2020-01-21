@@ -84,14 +84,12 @@ Compiles to
 @media (min-width: 992px) {
   .o-wrapper.o-full-wrapper {
     max-width: 1200px;
-    padding: 0 10px;
     margin: 0 auto;
   }
 }
 
 .o-wrapper.o-outer-wrapper {
   max-width: 1200px;
-  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -103,7 +101,6 @@ Compiles to
 
 .o-wrapper.o-inner-wrapper {
   max-width: 1200px;
-  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -118,12 +115,6 @@ Compiles to
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px;
-}
-
-.o-flex > * {
-  padding: 5px;
 }
 
 .o-flex > .o-col {
@@ -139,11 +130,6 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-  }
-  .o-flex-smUp > * {
-    padding: 5px;
   }
   .o-flex-smUp > .o-col {
     -webkit-box-flex: 1;
@@ -159,11 +145,6 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-  }
-  .o-flex-mdUp > * {
-    padding: 5px;
   }
   .o-flex-mdUp > .o-col {
     -webkit-box-flex: 1;
@@ -179,11 +160,6 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-  }
-  .o-flex-lgUp > * {
-    padding: 5px;
   }
   .o-flex-lgUp > .o-col {
     -webkit-box-flex: 1;
@@ -199,11 +175,6 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-  }
-  .o-flex-smUp > * {
-    padding: 5px;
   }
   .o-flex-smUp > .o-col {
     -webkit-box-flex: 1;
@@ -219,11 +190,6 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-  }
-  .o-flex-mdUp > * {
-    padding: 5px;
   }
   .o-flex-mdUp > .o-col {
     -webkit-box-flex: 1;
@@ -239,11 +205,6 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
-  }
-  .o-flex-lgUp > * {
-    padding: 5px;
   }
   .o-flex-lgUp > .o-col {
     -webkit-box-flex: 1;
@@ -2235,6 +2196,82 @@ Compiles to
   [class^="o-col"].u-grow-lgDown-false {
     -webkit-box-flex: 0;
             flex-grow: 0;
+  }
+}
+
+.o-flex.u-gap-true {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.o-flex.u-gap-true > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 576px) {
+  .o-flex.u-gap-smUp-true {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .o-flex.u-gap-smUp-true > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 786px) {
+  .o-flex.u-gap-mdUp-true {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .o-flex.u-gap-mdUp-true > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .o-flex.u-gap-lgUp-true {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .o-flex.u-gap-lgUp-true > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .o-flex.u-gap-smDown-true {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .o-flex.u-gap-smDown-true > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 786px) {
+  .o-flex.u-gap-mdDown-true {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .o-flex.u-gap-mdDown-true > * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .o-flex.u-gap-lgDown-true {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .o-flex.u-gap-lgDown-true > * {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 

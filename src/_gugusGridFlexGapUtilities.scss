@@ -1,0 +1,77 @@
+//flex-basis: default size
+// flex-shrink: how much is the element allowed to grow (0 == not allowed to shrink)
+// flex-grow: how buch is the element alowed to shrink (0 == not allowed to grow)
+
+//create order classes
+// first make the non responsive classes
+
+.o-flex {
+  &.u-gap-true {
+    margin-left: -$gridGap;
+    margin-right: -$gridGap;
+    > * {
+      padding-left: $gridGap;
+      padding-right: $gridGap;
+    }
+  }
+  @include smUp {
+    &.u-gap-smUp-true {
+      margin-left: -$gridGap;
+      margin-right: -$gridGap;
+      > * {
+        padding-left: $gridGap;
+        padding-right: $gridGap;
+      }
+    }
+  }
+  @include mdUp {
+    &.u-gap-mdUp-true {
+      margin-left: -$gridGap;
+      margin-right: -$gridGap;
+      > * {
+        padding-left: $gridGap;
+        padding-right: $gridGap;
+      }
+    }
+  }
+  @include lgUp {
+    &.u-gap-lgUp-true {
+      margin-left: -$gridGap;
+      margin-right: -$gridGap;
+      > * {
+        padding-left: $gridGap;
+        padding-right: $gridGap;
+      }
+    }
+  }
+  @include smDown {
+    &.u-gap-smDown-true {
+      margin-left: -$gridGap;
+      margin-right: -$gridGap;
+      > * {
+        padding-left: $gridGap;
+        padding-right: $gridGap;
+      }
+    }
+  }
+  @include mdDown {
+    &.u-gap-mdDown-true {
+      margin-left: -$gridGap;
+      margin-right: -$gridGap;
+      > * {
+        padding-left: $gridGap;
+        padding-right: $gridGap;
+      }
+    }
+  }
+  @include lgDown {
+    &.u-gap-lgDown-true {
+      margin-left: -$gridGap;
+      margin-right: -$gridGap;
+      > * {
+        padding-left: $gridGap;
+        padding-right: $gridGap;
+      }
+    }
+  }
+}

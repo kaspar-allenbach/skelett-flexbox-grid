@@ -13,7 +13,7 @@ For customisation adjust the following variables:
  // the gap between the flexbox elements
  // (the outer gap is reset by negative margins)
  
-  $gridPadding: 10px; 
+  $gridGap: 10px; 
 ```
 
 ## Flebox Grid

@@ -3,11 +3,6 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin-right: -$gridPadding;
-  margin-left: -$gridPadding;
-  > * {
-    padding: $gridPadding / 2;
-  }
   > .o-col {
     flex-grow: 1;
     flex-basis: 0;

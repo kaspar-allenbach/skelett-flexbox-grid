@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+
+<h1 id="gugus-grid">gugus-grid</h1>
+
+<p>Minimal grid</p>
+
+<p>This is a bare-bones approach for a css-only forntend grid without the fuss and overhead of current frameworks.</p>
+
+<h2 id="customisation">Customisation</h2>
+
+<p>For customisation adjust the following variables:</p>
+
+<pre><code>// all classes are generated from this numer
+
+  $baseGrid: 12; 
+  
+ // the gap between the flexbox elements
+ // (the outer gap is reset by negative margins)
+ 
+  $gridGap: 10px; 
+</code></pre>
+
+<h2 id="fleboxgrid">Flebox Grid</h2>
+
+<h3 id="basicgrid:">Basic Grid:</h3>
+
+<p>The Basic flexbox grid markup</p>
+
+<pre><code>&lt;div class=&quot;flexGrid&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<h3 id="standardisedsizing">Standardised Sizing</h3>
+
+<p>If you want to control the width of the grid elements add classes with a number like so: <code>col{x}</code></p>
+
+<pre><code>&lt;div class=&quot;flexGrid&quot;&gt;
+  &lt;div class=&quot;col1&quot;&gt;Column with full width&lt;/div&gt;
+  &lt;div class=&quot;col4&quot;&gt;Column with 1/4 width&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;fills the rest of the row&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<h4 id="responsivegrid">Responsive grid</h4>
+
+<p>Just add media query based classes to your grid:</p>
+
+<pre><code>&lt;div class=&quot;flexGrid&quot;&gt;
+  &lt;div class=&quot;col1 colMd4 colLg6&quot;&gt;Column with full width. 1/4 on Md size and 1/6 on Lg size&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;fills the rest of the row&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<h3 id="rowcolumns">Row Columns</h3>
+
+<p>You can also define the grid size on the parent element with <code>flexGrid rowCol{x}</code></p>
+
+<pre><code>&lt;div class=&quot;flexGrid rowCol4&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;1/4 column&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;1/4 column&lt;/div&gt;
+  &lt;div class=&quot;col col2&quot;&gt;overrides the parent directive/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<h4 id="responsiverowcolumns">Responsive Row Columns</h4>
+
+<p>You can also add repsonsive row Columns: <code>&lt;div class=&quot;flexGrid rowCol4 rowColLg4&quot;&gt;</code></p>
+
+<h2 id="utilityfirstvs.cssabstraction">Utility first vs. css abstraction</h2>
+
+<p>You can also write the whole thing in scss and use your own classes in the html markup:</p>
+
+<h3 id="columnrow">Column Row</h3>
+
+<pre><code>.yourOwnClass {
+  @include rowCol(x);
+  @include rowColSm(x);
+  @include rowColMd(x);
+}
+</code></pre>
+
+<h3 id="childelement">Child element</h3>
+
+<pre><code>.yourOwnClass {
+  @include col(x);
+  @include colSm(x);
+  @include coLg(x);
+}
+</code></pre>
+
+<h2 id="positioning">Positioning</h2>
+
+<p>There are helper classes if you want to position your stuff:</p>
+
+<p>Naming: <code>.{orientation}-{css-directive}</code></p>
+
+<p>Example: <code>x-space-between</code>or <code>y-center</code></p>
+
+<p>Responsive Positioning: <code>.{orientation}-{breakpoint}-{css-directive}</code></p>
+
+<p>Example: <code>x-md-space-between</code>or <code>y-sm-center</code></p>
+
+<pre><code>&lt;div class=&quot;flexGrid rowCol3 x-space-between&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;&lt;p&gt;blabla&lt;/p&gt;&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;blabla blabla blabla blabla blabla blabla blabla blabla&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>And as always you can also use your own classes like so:</p>
+
+<pre><code>.yourOwnClass {
+  @include x(space-between);
+  @include x-sm(space-evenly);
+  @include x-lg(center);
+}
+</code></pre>
+
+</body>
+</html>
+

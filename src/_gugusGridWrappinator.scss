@@ -1,10 +1,9 @@
 // ////////// gugus grid wrappinator ////////// //
 @mixin wrapSizer($innerOuterModifier: 2) {
   max-width: $baseWrapSize;
-  padding: 0 $gridPadding;
   margin: 0 auto;
   @include smUp {
-    padding: 0 $gridPadding * $innerOuterModifier;
+    padding: 0 $gridGap * $innerOuterModifier;
   }
 }
 
@@ -14,7 +13,6 @@
   &.o-full-wrapper {
     @include lgUp {
       max-width: $baseWrapSize;
-      padding: 0 $gridPadding;
       margin: 0 auto;
     }
   }
