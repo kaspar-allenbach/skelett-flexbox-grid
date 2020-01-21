@@ -6,7 +6,7 @@
 		<title>GUGUS Grid</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/dist/demoStyles.css">
+		<link rel="stylesheet" href="dist/demoStyles.css">
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/css.min.js" integrity="sha256-Q2fdeVsbumvzTK/ZSxmMoTE9ALaRYwyLAZGfpuuWOxE=" crossorigin="anonymous"></script>
@@ -210,6 +210,25 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="o-wrapper o-inner-wrapper">
+			<h3>Image utilities</h3>
+			<p>In flexbox images shrink the other columns when applied without any directives.
+				By default. All images fit into the grid size. If you ont to set the image free
+			</p>
+		</div>
+		<div class="o-wrapper o-outer-wrapper demo">
+			<div class="o-flex" data-class-name="'.o-flex'">
+				<div class="o-col u-grow-true">
+					<img src="https://placeimg.com/640/480/animals">
+				</div>
+				<div class="o-col"><p>Second in dom, first visually</p></div>
+				<div class="o-col"><p>third</p></div>
+				<div class="o-col"><p>fourth</p></div>
+				<div class="o-col"><p>fifth</p></div>
+			</div>
+		</div>
+
 		<div class="o-wrapper o-inner-wrapper">
 			<h2>Wrappers</h2>
 		</div>
@@ -291,9 +310,17 @@
 				<h3 class="o-col-12">Special Utilities</h3>
 				<div class="o-col-2"><code>.u-col-basis-auto</code></div>
 				<div class="o-col-10">Sets back <code>flex-basis</code> meaning the elements will default to inner content width. Nexessery for Y-axis spacing.</div>
-				<h3 class="o-col-12">Missing utilities</h3>
-				<div class="o-col-2"><code>.u-img</code></div>
-				<div class="o-col-10">Image sizing is a bitt special in flexbox. Coming soon.</div>
+				<h3 class="o-col-12">Shrink & Grow Utilities</h3>
+				<div class="o-col-2"><code>.u-shrink-true</code></div>
+				<div class="o-col-10">Allowes element to shrink</div>
+				<div class="o-col-2"><code>.u-shrink-false</code></div>
+				<div class="o-col-10">Doesn't allow element to shrink</div>
+				<div class="o-col-2"><code>.u-grow-true</code></div>
+				<div class="o-col-10">Allowes element to grow</div>
+				<div class="o-col-2"><code>.u-grow-false</code></div>
+				<div class="o-col-10">Doesn't allow element to grow</div>
+				<div class="o-col-2"><code>.u-grow-mmQq-#</code></div>
+				<div class="o-col-10">Also possible to use with media queries</div>
 			</div>
 		</div>
 		<div class="colorWrap">
