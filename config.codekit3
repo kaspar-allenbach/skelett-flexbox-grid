@@ -35,6 +35,24 @@
 		"oAP": "/dist/demoStyles.css.map",
 		"oF": 0
 		},
+	"/dist/skelett-flexbox-grid.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dist/skelett-flexbox-grid-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/dist/skelett-flexbox-grid.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dist/skelett-flexbox-grid.css.map",
+		"oF": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -49,7 +67,7 @@
 		"oAP": "/dist/node_modules",
 		"oF": 0
 		},
-	"/node_modules/gugus-media-queries/gugus-media-queries.scss": {
+	"/node_modules/skelett-media-queries/src/_skelett-media-query-mixins.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -57,7 +75,46 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/node_modules/gugus-media-queries/gugus-media-queries.scss",
+		"oAP": "/dist/_skelett-media-query-mixins.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/node_modules/skelett-media-queries/src/_skelett-media-query-utilities.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_skelett-media-query-utilities.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/node_modules/skelett-media-queries/src/_skelett-media-query-vars.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_skelett-media-query-vars.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/node_modules/skelett-media-queries/src/skelett-media-queries.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/skelett-media-queries.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
@@ -105,7 +162,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/src/_gugusGridFlex.scss": {
+	"/src/_skelett-flexbox-grid-column.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -113,12 +170,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlex.css",
+		"oAP": "/dist/_skelett-flexbox-grid-column.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexColumn.scss": {
+	"/src/_skelett-flexbox-grid-direction-utilities.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -126,12 +183,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexColumn.css",
+		"oAP": "/dist/_skelett-flexbox-grid-direction-utilities.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexDirectionUtilities.scss": {
+	"/src/_skelett-flexbox-grid-gap-Utilities.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -139,12 +196,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexDirectionUtilities.css",
+		"oAP": "/dist/_skelett-flexbox-grid-gap-Utilities.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexGapUtilities.scss": {
+	"/src/_skelett-flexbox-grid-order-Utilities.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -152,12 +209,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexGapUtilities.css",
+		"oAP": "/dist/_skelett-flexbox-grid-order-Utilities.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexOrderUtilities.scss": {
+	"/src/_skelett-flexbox-grid-positioning-utilities.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -165,12 +222,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexOrderUtilities.css",
+		"oAP": "/dist/_skelett-flexbox-grid-positioning-utilities.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexPositioningUtilities.scss": {
+	"/src/_skelett-flexbox-grid-row.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -178,12 +235,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexPositioningUtilities.css",
+		"oAP": "/dist/_skelett-flexbox-grid-row.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexRow.scss": {
+	"/src/_skelett-flexbox-grid-sizing-utilities.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -191,12 +248,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexRow.css",
+		"oAP": "/dist/_skelett-flexbox-grid-sizing-utilities.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridFlexSizingUtilities.scss": {
+	"/src/_skelett-flexbox-grid-vars.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -204,12 +261,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridFlexSizingUtilities.css",
+		"oAP": "/dist/_skelett-flexbox-grid-vars.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridVars.scss": {
+	"/src/_skelett-flexbox-grid-wrappinator.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -217,12 +274,12 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridVars.css",
+		"oAP": "/dist/_skelett-flexbox-grid-wrappinator.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_gugusGridWrappinator.scss": {
+	"/src/_skelett-flexbox-grid.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -230,7 +287,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_gugusGridWrappinator.css",
+		"oAP": "/dist/_skelett-flexbox-grid.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
@@ -248,15 +305,15 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/gugusGrid.scss": {
+	"/src/skelett-flexbox-grid.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
-		"oAP": "/dist/gugusGrid.css",
+		"oA": 0,
+		"oAP": "/dist/skelett-flexbox-grid.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
@@ -268,7 +325,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 597685761.96865106,
-	"displayValue": "gugus-grid",
+	"displayValue": "skelett-flexbox-grid",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-cafe",
 	"iconImageWasSetByUser": 0

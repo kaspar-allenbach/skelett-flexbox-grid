@@ -1,0 +1,24 @@
+//initiate flexbox model
+@mixin flexUtility {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  &.u-nowrap {
+    flex-wrap: nowrap;
+  }
+  > .o-col {
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+  }
+}
+
+.o-flex, %o-flex { @include flexUtility; }
+
+@include sm__up { .o-flex-sm__up, %o-flex-sm__up{ @include flexUtility; } }
+@include md__up { .o-flex-md__up, %o-flex-md__up { @include flexUtility; } }
+@include lg__up { .o-flex-lg__up, %o-flex-lg__up { @include flexUtility; } }
+
+@include sm__down { .o-flex-sm__up, %o-flex-sm__up { @include flexUtility; } }
+@include md__down { .o-flex-md__up, %o-flex-md__up { @include flexUtility; } }
+@include lg__down { .o-flex-lg__up, %o-flex-lg__up { @include flexUtility; } }

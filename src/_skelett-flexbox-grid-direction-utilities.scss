@@ -1,0 +1,44 @@
+//direction variables
+$flexDirectionOptions: column, row, column-reverse, row-reverse;
+$class-name-direction: "u-direction-";
+
+// first make the non responsive classes
+@each $param in $flexDirectionOptions {
+  .#{$class-name-direction}#{$param},
+  %#{$class-name-direction}#{$param} {
+    flex-direction: $param;
+  }
+}
+//responsive directional classes
+@each $param in $flexDirectionOptions {
+  @include sm__up {
+    .#{$class-name-direction}sm__up-#{$param}, %#{$class-name-direction}sm__up-#{$param} {
+      flex-direction: $param;
+    }
+  }
+  @include md__up {
+    .#{$class-name-direction}md__up-#{$param}, %#{$class-name-direction}md__up-#{$param} {
+      flex-direction: $param;
+    }
+  }
+  @include lg__up {
+    .#{$class-name-direction}lg__up-#{$param}, %#{$class-name-direction}lg__up-#{$param} {
+      flex-direction: $param;
+    }
+  }
+  @include sm__down {
+    .#{$class-name-direction}sm__down-#{$param}, %#{$class-name-direction}sm__down-#{$param} {
+      flex-direction: $param;
+    }
+  }
+  @include md__down {
+    .#{$class-name-direction}sm__down-#{$param}, %#{$class-name-direction}sm__down-#{$param} {
+      flex-direction: $param;
+    }
+  }
+  @include lg__down {
+    .#{$class-name-direction}sm__down-#{$param}, %#{$class-name-direction}sm__down-#{$param} {
+      flex-direction: $param;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+//orientation position variables
+$flexPosXOptions: center, space-around, space-between, space-evenly, flex-start, flex-end;
+$flexPosYOptions: center, flex-start, flex-end;
+
+//flex basis modifier
+.o-flex {
+  &.u-col-basis-auto, %u-col-basis-auto {
+     [class="o-col"] {
+      flex-basis: auto;
+      flex-grow: 0;
+    }
+  }
+}
+
+//flex-position on x axis
+@each $param in $flexPosXOptions {
+  .u-x-#{$param}, %u-x-#{$param} { justify-content: $param; }
+}
+@each $param in $flexPosXOptions {
+  @include sm__up { .u-x-sm__up-#{$param} {justify-content: $param;} }
+  @include md__up { .u-x-md__up-#{$param} {justify-content: $param;} }
+  @include lg__up { .u-x-lg__up-#{$param} {justify-content: $param;} }
+  @include sm__down { .u-x-sm__down-#{$param} {justify-content: $param;} }
+  @include md__down { .u-x-md__down-#{$param} {justify-content: $param;} }
+  @include lg__down { .u-x-lg__down-#{$param} {justify-content: $param;} }
+}
+
+//flex-position on yaxis
+@each $param in $flexPosYOptions {
+  .u-y-#{$param} { align-items: $param; }
+}
+@each $param in $flexPosYOptions {
+  @include sm__up { .u-y-sm__up-#{$param} {align-items: $param;} }
+  @include md__up { .u-y-md__up-#{$param} {align-items: $param;} }
+  @include lg__up { .u-y-lg__up-#{$param} {align-items: $param;} }
+  @include sm__down { .u-y-sm__down-#{$param} {align-items: $param;} }
+  @include md__down { .u-y-md__down-#{$param} {align-items: $param;} }
+  @include lg__down { .u-y-lg__down-#{$param} {align-items: $param;} }
+}

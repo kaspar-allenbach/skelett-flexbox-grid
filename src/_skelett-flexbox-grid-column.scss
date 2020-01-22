@@ -8,27 +8,27 @@
 }
 
 //media query Up
-@include smUp {
+@include sm__up {
   @for $i from 1 through $baseGrid {
-    .o-col-smUp-#{$i}, %o-col-smUp-#{$i} {
+    .o-col-sm__up-#{$i}, %o-col-sm__up-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
     }
   }
 }
-@include mdUp {
+@include md__up {
   @for $i from 1 through $baseGrid {
-    .o-col-mdUp-#{$i}, %o-col-mdUp-#{$i} {
+    .o-col-md__up-#{$i}, %o-col-md__up-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
     }
   }
 }
-@include lgUp {
+@include lg__up {
   @for $i from 1 through $baseGrid {
-    .o-col-lgUp-#{$i}, %o-col-lgUp-#{$i} {
+    .o-col-lg__up-#{$i}, %o-col-lg__up-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
@@ -36,27 +36,27 @@
   }
 }
 //media query down
-@include smDown {
+@include sm__down {
   @for $i from 1 through $baseGrid {
-    .o-col-smDown-#{$i}, %o-col-smDown-#{$i} {
+    .o-col-sm__down-#{$i}, %o-col-sm__down-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
     }
   }
 }
-@include mdDown {
+@include md__down {
   @for $i from 1 through $baseGrid {
-    .o-col-mdDown-#{$i}, %o-col-mdDown-#{$i} {
+    .o-col-md__down-#{$i}, %o-col-md__down-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
     }
   }
 }
-@include lgDown {
+@include lg__down {
   @for $i from 1 through $baseGrid {
-    .o-col-lgDown-#{$i}, o-col-lgDown-#{$i} {
+    .o-col-lg__down-#{$i}, o-col-lg__down-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;

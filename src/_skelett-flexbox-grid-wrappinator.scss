@@ -2,7 +2,7 @@
 @mixin wrapSizer($innerOuterModifier: 2) {
   max-width: $baseWrapSize;
   margin: 0 auto;
-  @include smUp {
+  @include sm__up {
     padding: 0 $gridGap * $innerOuterModifier;
   }
 }
@@ -11,7 +11,7 @@
   display: block;
   position: relative;
   &.o-full-wrapper {
-    @include lgUp {
+    @include lg__up {
       max-width: $baseWrapSize;
       margin: 0 auto;
     }

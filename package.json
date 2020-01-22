@@ -1,5 +1,5 @@
 {
-  "name": "gugus-grid",
+  "name": "skelett-flexbox-grid",
   "version": "1.0.0",
   "description": "A very basic flexbox & css grid library four your daily needs.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://Kaspar-Allenbach@github.com/kaspar-allenbach/gugus-grid.git"
+    "url": "git+https://Kaspar-Allenbach@github.com/kaspar-allenbach/skelett-flexbox-grid.git"
   },
   "keywords": [
     "grid",
@@ -24,10 +24,10 @@
   "author": "Kaspar Allenbach",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kaspar-allenbach/gugus-grid/issues"
+    "url": "https://github.com/kaspar-allenbach/skelett-flexbox-grid/issues"
   },
-  "homepage": "https://github.com/kaspar-allenbach/gugus-grid#readme",
+  "homepage": "https://github.com/kaspar-allenbach/skelett-flexbox-grid#readme",
   "dependencies": {
-    "gugus-media-queries": "^1.1.2"
+    "skelett-media-queries": "file:../skelett-media-queries"
   }
 }

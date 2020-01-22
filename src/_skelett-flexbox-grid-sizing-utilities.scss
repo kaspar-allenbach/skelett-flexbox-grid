@@ -20,87 +20,87 @@
     flex-grow: 0;
   }
 
-  @include smUp {
-    &.u-shrink-smUp-true {
+  @include sm__up {
+    &.u-shrink-sm__up-true {
       flex-shrink: 1;
     }
-    &.u-shrink-smUp-false {
+    &.u-shrink-sm__up-false {
       flex-shrink: 0;
     }
-    &.u-grow-smUp-true {
+    &.u-grow-sm__up-true {
       flex-grow: 1;
     }
-    &.u-grow-smUp-false {
+    &.u-grow-sm__up-false {
       flex-grow: 0;
     }
   }
-  @include mdUp {
-    &.u-shrink-mdUp-true {
+  @include md__up {
+    &.u-shrink-md__up-true {
       flex-shrink: 1;
     }
-    &.u-shrink-mdUp-false {
+    &.u-shrink-md__up-false {
       flex-shrink: 0;
     }
-    &.u-grow-mdUp-true {
+    &.u-grow-md__up-true {
       flex-grow: 1;
     }
-    &.u-grow-mdUp-false {
+    &.u-grow-md__up-false {
       flex-grow: 0;
     }
   }
-  @include lgUp {
-    &.u-shrink-lgUp-true {
+  @include lg__up {
+    &.u-shrink-lg__up-true {
       flex-shrink: 1;
     }
-    &.u-shrink-lgUp-false {
+    &.u-shrink-lg__up-false {
       flex-shrink: 0;
     }
-    &.u-grow-lgUp-true {
+    &.u-grow-lg__up-true {
       flex-grow: 1;
     }
-    &.u-grow-lgUp-false {
+    &.u-grow-lg__up-false {
       flex-grow: 0;
     }
   }
-  @include smDown {
-    &.u-shrink-smDown-true {
+  @include sm__down {
+    &.u-shrink-sm__down-true {
       flex-shrink: 1;
     }
-    &.u-shrink-smDown-false {
+    &.u-shrink-sm__down-false {
       flex-shrink: 0;
     }
-    &.u-grow-smDown-true {
+    &.u-grow-sm__down-true {
       flex-grow: 1;
     }
-    &.u-grow-smDown-false {
+    &.u-grow-sm__down-false {
       flex-grow: 0;
     }
   }
-  @include mdDown {
-    &.u-shrink-smDown-true {
+  @include md__down {
+    &.u-shrink-sm__down-true {
       flex-shrink: 1;
     }
-    &.u-shrink-smDown-false {
+    &.u-shrink-sm__down-false {
       flex-shrink: 0;
     }
-    &.u-grow-smDown-true {
+    &.u-grow-sm__down-true {
       flex-grow: 1;
     }
-    &.u-grow-smDown-false {
+    &.u-grow-sm__down-false {
       flex-grow: 0;
     }
   }
-  @include lgDown {
-    &.u-shrink-lgDown-true {
+  @include lg__down {
+    &.u-shrink-lg__down-true {
       flex-shrink: 1;
     }
-    &.u-shrink-lgDown-false {
+    &.u-shrink-lg__down-false {
       flex-shrink: 0;
     }
-    &.u-grow-lgDown-true {
+    &.u-grow-lg__down-true {
       flex-grow: 1;
     }
-    &.u-grow-lgDown-false {
+    &.u-grow-lg__down-false {
       flex-grow: 0;
     }
   }

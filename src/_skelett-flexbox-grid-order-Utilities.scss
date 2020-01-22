@@ -1,0 +1,41 @@
+//create order classes
+@for $i from 1 through $baseGrid {
+  &.u-col-order-#{$i},
+  %u-col-order-#{$i} {
+    order: $i;
+  }
+}
+
+@for $i from 1 through $baseGrid {
+  @include sm__up {
+    .u-col-order-sm__up-#{$i}, %u-col-order-sm__up-#{$i} {
+      order: $i;
+    }
+  }
+  @include md__up {
+    .u-col-order-md__up-#{$i}, %u-col-order-md__up-#{$i} {
+      order: $i;
+    }
+  }
+  @include lg__up {
+    .u-col-order-lg__up-#{$i}, %u-col-order-lg__up-#{$i} {
+      order: $i;
+    }
+  }
+
+  @include sm__up {
+    .u-col-order-sm__down-#{$i}, %u-col-order-sm__down-#{$i} {
+      order: $i;
+    }
+  }
+  @include md__up {
+    .u-col-order-md__down-#{$i}, %u-col-order-md__down-#{$i} {
+      order: $i;
+    }
+  }
+  @include lg__up {
+    .u-col-order-lg__down-#{$i}, %u-col-order-lg__down-#{$i} {
+      order: $i;
+    }
+  }
+}
