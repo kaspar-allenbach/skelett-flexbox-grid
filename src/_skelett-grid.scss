@@ -2,6 +2,7 @@
 @mixin flexUtility {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .o-flex, %o-flex { @include flexUtility; }
@@ -11,6 +12,8 @@
   flex-basis: 0;
   position: relative;
 }
+.u-nowrap, %u-nowrap { flex-wrap: nowrap; }
+
 
 @include sm__up { .o-flex-sm__up, %o-flex-sm__up{ @include flexUtility; } }
 @include md__up { .o-flex-md__up, %o-flex-md__up { @include flexUtility; } }
@@ -20,4 +23,5 @@
 @include md__down { .o-flex-md__down, %o-flex-md__down { @include flexUtility; } }
 @include lg__down { .o-flex-lg__don, %o-flex-lg__down { @include flexUtility; } }
 
-.u-nowrap, %u-nowrap { flex-wrap: nowrap; }
+
+
