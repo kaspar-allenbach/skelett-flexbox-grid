@@ -1,7 +1,7 @@
 //flexbox-grid-columns
 @for $i from 1 through $baseGrid {
   .o-col-#{$i}, %o-col-#{$i} {
-    flex-basis: (100 * $i + 0%);
+    flex-basis: ($i / $baseGrid * 100 + 0%);
     max-width: ($i / $baseGrid * 100 + 0%);
     position: relative;
   }

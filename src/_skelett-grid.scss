@@ -2,21 +2,22 @@
 @mixin flexUtility {
   display: flex;
   position: relative;
-  flex-wrap: wrap;
-  
 }
 
 .o-flex, %o-flex { @include flexUtility; }
-.u-nowrap, %u-nowrap { flex-wrap: nowrap; }
+
 .o-col, %o-col {
   flex-grow: 1;
   flex-basis: 0;
   position: relative;
 }
+
 @include sm__up { .o-flex-sm__up, %o-flex-sm__up{ @include flexUtility; } }
 @include md__up { .o-flex-md__up, %o-flex-md__up { @include flexUtility; } }
 @include lg__up { .o-flex-lg__up, %o-flex-lg__up { @include flexUtility; } }
 
-@include sm__down { .o-flex-sm__up, %o-flex-sm__up { @include flexUtility; } }
-@include md__down { .o-flex-md__up, %o-flex-md__up { @include flexUtility; } }
-@include lg__down { .o-flex-lg__up, %o-flex-lg__up { @include flexUtility; } }
+@include sm__down { .o-flex-sm__down, %o-flex-sm__down { @include flexUtility; } }
+@include md__down { .o-flex-md__down, %o-flex-md__down { @include flexUtility; } }
+@include lg__down { .o-flex-lg__don, %o-flex-lg__down { @include flexUtility; } }
+
+.u-nowrap, %u-nowrap { flex-wrap: nowrap; }

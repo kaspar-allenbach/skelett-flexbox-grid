@@ -63,11 +63,6 @@
   display: -webkit-box;
   display: flex;
   position: relative;
-  flex-wrap: wrap;
-}
-
-.u-nowrap {
-  flex-wrap: nowrap;
 }
 
 .o-col {
@@ -82,7 +77,6 @@
     display: -webkit-box;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
   }
 }
 
@@ -91,7 +85,6 @@
     display: -webkit-box;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
   }
 }
 
@@ -100,35 +93,35 @@
     display: -webkit-box;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 576px) {
-  .o-flex-sm__up {
+  .o-flex-sm__down {
     display: -webkit-box;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 786px) {
-  .o-flex-md__up {
+  .o-flex-md__down {
     display: -webkit-box;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 992px) {
-  .o-flex-lg__up {
+  .o-flex-lg__don {
     display: -webkit-box;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
   }
+}
+
+.u-nowrap {
+  flex-wrap: nowrap;
 }
 
 .o-wrapper {
@@ -328,73 +321,73 @@
 }
 
 .o-col-1 {
-  flex-basis: 100%;
+  flex-basis: 8.3333333333%;
   max-width: 8.3333333333%;
   position: relative;
 }
 
 .o-col-2 {
-  flex-basis: 200%;
+  flex-basis: 16.6666666667%;
   max-width: 16.6666666667%;
   position: relative;
 }
 
 .o-col-3 {
-  flex-basis: 300%;
+  flex-basis: 25%;
   max-width: 25%;
   position: relative;
 }
 
 .o-col-4 {
-  flex-basis: 400%;
+  flex-basis: 33.3333333333%;
   max-width: 33.3333333333%;
   position: relative;
 }
 
 .o-col-5 {
-  flex-basis: 500%;
+  flex-basis: 41.6666666667%;
   max-width: 41.6666666667%;
   position: relative;
 }
 
 .o-col-6 {
-  flex-basis: 600%;
+  flex-basis: 50%;
   max-width: 50%;
   position: relative;
 }
 
 .o-col-7 {
-  flex-basis: 700%;
+  flex-basis: 58.3333333333%;
   max-width: 58.3333333333%;
   position: relative;
 }
 
 .o-col-8 {
-  flex-basis: 800%;
+  flex-basis: 66.6666666667%;
   max-width: 66.6666666667%;
   position: relative;
 }
 
 .o-col-9 {
-  flex-basis: 900%;
+  flex-basis: 75%;
   max-width: 75%;
   position: relative;
 }
 
 .o-col-10 {
-  flex-basis: 1000%;
+  flex-basis: 83.3333333333%;
   max-width: 83.3333333333%;
   position: relative;
 }
 
 .o-col-11 {
-  flex-basis: 1100%;
+  flex-basis: 91.6666666667%;
   max-width: 91.6666666667%;
   position: relative;
 }
 
 .o-col-12 {
-  flex-basis: 1200%;
+  flex-basis: 100%;
   max-width: 100%;
   position: relative;
 }
@@ -834,7 +827,7 @@
 }
 
 @media (max-width: 786px) {
-  .u-direction-sm__down-column {
+  .u-direction-md__down-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
@@ -842,7 +835,7 @@
 }
 
 @media (max-width: 992px) {
-  .u-direction-sm__down-column {
+  .u-direction-lg__down-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
@@ -882,7 +875,7 @@
 }
 
 @media (max-width: 786px) {
-  .u-direction-sm__down-row {
+  .u-direction-md__down-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
@@ -890,7 +883,7 @@
 }
 
 @media (max-width: 992px) {
-  .u-direction-sm__down-row {
+  .u-direction-lg__down-row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
@@ -930,7 +923,7 @@
 }
 
 @media (max-width: 786px) {
-  .u-direction-sm__down-column-reverse {
+  .u-direction-md__down-column-reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
@@ -938,7 +931,7 @@
 }
 
 @media (max-width: 992px) {
-  .u-direction-sm__down-column-reverse {
+  .u-direction-lg__down-column-reverse {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
@@ -978,7 +971,7 @@
 }
 
 @media (max-width: 786px) {
-  .u-direction-sm__down-row-reverse {
+  .u-direction-md__down-row-reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
             flex-direction: row-reverse;
@@ -986,7 +979,7 @@
 }
 
 @media (max-width: 992px) {
-  .u-direction-sm__down-row-reverse {
+  .u-direction-lg__down-row-reverse {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
             flex-direction: row-reverse;

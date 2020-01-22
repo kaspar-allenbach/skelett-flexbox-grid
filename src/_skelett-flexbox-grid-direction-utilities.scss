@@ -32,12 +32,12 @@ $class-name-direction: "u-direction-";
     }
   }
   @include md__down {
-    .#{$class-name-direction}sm__down-#{$param}, %#{$class-name-direction}sm__down-#{$param} {
+    .#{$class-name-direction}md__down-#{$param}, %#{$class-name-direction}sm__down-#{$param} {
       flex-direction: $param;
     }
   }
   @include lg__down {
-    .#{$class-name-direction}sm__down-#{$param}, %#{$class-name-direction}sm__down-#{$param} {
+    .#{$class-name-direction}lg__down-#{$param}, %#{$class-name-direction}sm__down-#{$param} {
       flex-direction: $param;
     }
   }
