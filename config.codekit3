@@ -279,7 +279,7 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"/src/_skelett-flexbox-grid.scss": {
+	"/src/_skelett-grid.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -287,7 +287,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/dist/_skelett-flexbox-grid.css",
+		"oAP": "/dist/_skelett-grid.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
@@ -312,7 +312,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dist/skelett-flexbox-grid.css",
 		"oF": 0,
 		"oS": 1,
