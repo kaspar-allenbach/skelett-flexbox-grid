@@ -119,14 +119,6 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-lock-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -314,6 +306,45 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/dist/skelett-flexbox-grid.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/Users/mtdesign/Documents/git_local/skelett-media-queries/src/_skelett-media-query-mixins.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_skelett-media-query-mixins.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/Users/mtdesign/Documents/git_local/skelett-media-queries/src/_skelett-media-query-utilities.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_skelett-media-query-utilities.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/Users/mtdesign/Documents/git_local/skelett-media-queries/src/_skelett-media-query-vars.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_skelett-media-query-vars.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
