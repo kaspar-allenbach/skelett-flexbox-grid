@@ -3,6 +3,9 @@
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  &.u-nowrap {
+    flex-wrap: nowrap;
+  }
   > .o-col {
     flex-grow: 1;
     flex-basis: 0;
@@ -10,12 +13,12 @@
   }
 }
 
-.o-flex { @include flexUtility; }
+.o-flex, %o-flex { @include flexUtility; }
 
-@include smUp { .o-flex-smUp { @include flexUtility; } }
-@include mdUp { .o-flex-mdUp { @include flexUtility; } }
-@include lgUp { .o-flex-lgUp { @include flexUtility; } }
+@include smUp { .o-flex-smUp, %o-flex-smUp{ @include flexUtility; } }
+@include mdUp { .o-flex-mdUp, %o-flex-mdUp { @include flexUtility; } }
+@include lgUp { .o-flex-lgUp, %o-flex-lgUp { @include flexUtility; } }
 
-@include smDown { .o-flex-smUp { @include flexUtility; } }
-@include mdDown { .o-flex-mdUp { @include flexUtility; } }
-@include lgDown { .o-flex-lgUp { @include flexUtility; } }
+@include smDown { .o-flex-smUp, %o-flex-smUp { @include flexUtility; } }
+@include mdDown { .o-flex-mdUp, %o-flex-mdUp { @include flexUtility; } }
+@include lgDown { .o-flex-lgUp, %o-flex-lgUp { @include flexUtility; } }

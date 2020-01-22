@@ -117,6 +117,10 @@ Compiles to
   flex-wrap: wrap;
 }
 
+.o-flex.u-nowrap {
+  flex-wrap: nowrap;
+}
+
 .o-flex > .o-col {
   -webkit-box-flex: 1;
           flex-grow: 1;
@@ -130,6 +134,9 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
+  }
+  .o-flex-smUp.u-nowrap {
+    flex-wrap: nowrap;
   }
   .o-flex-smUp > .o-col {
     -webkit-box-flex: 1;
@@ -146,6 +153,9 @@ Compiles to
     position: relative;
     flex-wrap: wrap;
   }
+  .o-flex-mdUp.u-nowrap {
+    flex-wrap: nowrap;
+  }
   .o-flex-mdUp > .o-col {
     -webkit-box-flex: 1;
             flex-grow: 1;
@@ -160,6 +170,9 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
+  }
+  .o-flex-lgUp.u-nowrap {
+    flex-wrap: nowrap;
   }
   .o-flex-lgUp > .o-col {
     -webkit-box-flex: 1;
@@ -176,6 +189,9 @@ Compiles to
     position: relative;
     flex-wrap: wrap;
   }
+  .o-flex-smUp.u-nowrap {
+    flex-wrap: nowrap;
+  }
   .o-flex-smUp > .o-col {
     -webkit-box-flex: 1;
             flex-grow: 1;
@@ -191,6 +207,9 @@ Compiles to
     position: relative;
     flex-wrap: wrap;
   }
+  .o-flex-mdUp.u-nowrap {
+    flex-wrap: nowrap;
+  }
   .o-flex-mdUp > .o-col {
     -webkit-box-flex: 1;
             flex-grow: 1;
@@ -205,6 +224,9 @@ Compiles to
     display: flex;
     position: relative;
     flex-wrap: wrap;
+  }
+  .o-flex-lgUp.u-nowrap {
+    flex-wrap: nowrap;
   }
   .o-flex-lgUp > .o-col {
     -webkit-box-flex: 1;
@@ -815,62 +837,62 @@ Compiles to
 }
 
 @media (max-width: 992px) {
-  .o-col-lgDown-1 {
+  .o-col-lgDown-1, o-col-lgDown-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
     position: relative;
   }
-  .o-col-lgDown-2 {
+  .o-col-lgDown-2, o-col-lgDown-2 {
     flex-basis: 16.6666666667%;
     max-width: 16.6666666667%;
     position: relative;
   }
-  .o-col-lgDown-3 {
+  .o-col-lgDown-3, o-col-lgDown-3 {
     flex-basis: 25%;
     max-width: 25%;
     position: relative;
   }
-  .o-col-lgDown-4 {
+  .o-col-lgDown-4, o-col-lgDown-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
     position: relative;
   }
-  .o-col-lgDown-5 {
+  .o-col-lgDown-5, o-col-lgDown-5 {
     flex-basis: 41.6666666667%;
     max-width: 41.6666666667%;
     position: relative;
   }
-  .o-col-lgDown-6 {
+  .o-col-lgDown-6, o-col-lgDown-6 {
     flex-basis: 50%;
     max-width: 50%;
     position: relative;
   }
-  .o-col-lgDown-7 {
+  .o-col-lgDown-7, o-col-lgDown-7 {
     flex-basis: 58.3333333333%;
     max-width: 58.3333333333%;
     position: relative;
   }
-  .o-col-lgDown-8 {
+  .o-col-lgDown-8, o-col-lgDown-8 {
     flex-basis: 66.6666666667%;
     max-width: 66.6666666667%;
     position: relative;
   }
-  .o-col-lgDown-9 {
+  .o-col-lgDown-9, o-col-lgDown-9 {
     flex-basis: 75%;
     max-width: 75%;
     position: relative;
   }
-  .o-col-lgDown-10 {
+  .o-col-lgDown-10, o-col-lgDown-10 {
     flex-basis: 83.3333333333%;
     max-width: 83.3333333333%;
     position: relative;
   }
-  .o-col-lgDown-11 {
+  .o-col-lgDown-11, o-col-lgDown-11 {
     flex-basis: 91.6666666667%;
     max-width: 91.6666666667%;
     position: relative;
   }
-  .o-col-lgDown-12 {
+  .o-col-lgDown-12, o-col-lgDown-12 {
     flex-basis: 100%;
     max-width: 100%;
     position: relative;
@@ -2199,77 +2221,77 @@ Compiles to
   }
 }
 
-.o-flex.u-gap-true {
+.o-flex.u-gap {
   margin-left: -5px;
   margin-right: -5px;
 }
 
-.o-flex.u-gap-true > * {
+.o-flex.u-gap > * {
   padding-left: 5px;
   padding-right: 5px;
 }
 
 @media (min-width: 576px) {
-  .o-flex.u-gap-smUp-true {
+  .o-flex.u-gap-smUp {
     margin-left: -10px;
     margin-right: -10px;
   }
-  .o-flex.u-gap-smUp-true > * {
+  .o-flex.u-gap-smUp > * {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media (min-width: 786px) {
-  .o-flex.u-gap-mdUp-true {
+  .o-flex.u-gap-mdUp {
     margin-left: -10px;
     margin-right: -10px;
   }
-  .o-flex.u-gap-mdUp-true > * {
+  .o-flex.u-gap-mdUp > * {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media (min-width: 992px) {
-  .o-flex.u-gap-lgUp-true {
+  .o-flex.u-gap-lgUp {
     margin-left: -10px;
     margin-right: -10px;
   }
-  .o-flex.u-gap-lgUp-true > * {
+  .o-flex.u-gap-lgUp > * {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media (max-width: 576px) {
-  .o-flex.u-gap-smDown-true {
+  .o-flex.u-gap-smDown {
     margin-left: -10px;
     margin-right: -10px;
   }
-  .o-flex.u-gap-smDown-true > * {
+  .o-flex.u-gap-smDown > * {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media (max-width: 786px) {
-  .o-flex.u-gap-mdDown-true {
+  .o-flex.u-gap-mdDown {
     margin-left: -10px;
     margin-right: -10px;
   }
-  .o-flex.u-gap-mdDown-true > * {
+  .o-flex.u-gap-mdDown > * {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media (max-width: 992px) {
-  .o-flex.u-gap-lgDown-true {
+  .o-flex.u-gap-lgDown {
     margin-left: -10px;
     margin-right: -10px;
   }
-  .o-flex.u-gap-lgDown-true > * {
+  .o-flex.u-gap-lgDown > * {
     padding-left: 10px;
     padding-right: 10px;
   }

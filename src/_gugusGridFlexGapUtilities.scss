@@ -6,7 +6,7 @@
 // first make the non responsive classes
 
 .o-flex {
-  &.u-gap-true {
+  &.u-gap {
     margin-left: -$gridGap / 2;
     margin-right: -$gridGap / 2;
     > * {
@@ -15,7 +15,7 @@
     }
   }
   @include smUp {
-    &.u-gap-smUp-true {
+    &.u-gap-smUp {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -25,7 +25,7 @@
     }
   }
   @include mdUp {
-    &.u-gap-mdUp-true {
+    &.u-gap-mdUp {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -35,7 +35,7 @@
     }
   }
   @include lgUp {
-    &.u-gap-lgUp-true {
+    &.u-gap-lgUp {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -45,7 +45,7 @@
     }
   }
   @include smDown {
-    &.u-gap-smDown-true {
+    &.u-gap-smDown {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -55,7 +55,7 @@
     }
   }
   @include mdDown {
-    &.u-gap-mdDown-true {
+    &.u-gap-mdDown {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -65,7 +65,7 @@
     }
   }
   @include lgDown {
-    &.u-gap-lgDown-true {
+    &.u-gap-lgDown {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {

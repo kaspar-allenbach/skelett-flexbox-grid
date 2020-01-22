@@ -1,6 +1,6 @@
 //flexbox-grid-columns
 @for $i from 1 through $baseGrid {
-  .o-col-#{$i} {
+  .o-col-#{$i}, %o-col-#{$i} {
     flex-basis: (100 * $i + 0%);
     max-width: ($i / $baseGrid * 100 + 0%);
     position: relative;
@@ -10,7 +10,7 @@
 //media query Up
 @include smUp {
   @for $i from 1 through $baseGrid {
-    .o-col-smUp-#{$i} {
+    .o-col-smUp-#{$i}, %o-col-smUp-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
@@ -19,7 +19,7 @@
 }
 @include mdUp {
   @for $i from 1 through $baseGrid {
-    .o-col-mdUp-#{$i} {
+    .o-col-mdUp-#{$i}, %o-col-mdUp-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
@@ -28,7 +28,7 @@
 }
 @include lgUp {
   @for $i from 1 through $baseGrid {
-    .o-col-lgUp-#{$i} {
+    .o-col-lgUp-#{$i}, %o-col-lgUp-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
@@ -38,7 +38,7 @@
 //media query down
 @include smDown {
   @for $i from 1 through $baseGrid {
-    .o-col-smDown-#{$i} {
+    .o-col-smDown-#{$i}, %o-col-smDown-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
@@ -47,7 +47,7 @@
 }
 @include mdDown {
   @for $i from 1 through $baseGrid {
-    .o-col-mdDown-#{$i} {
+    .o-col-mdDown-#{$i}, %o-col-mdDown-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
@@ -56,7 +56,7 @@
 }
 @include lgDown {
   @for $i from 1 through $baseGrid {
-    .o-col-lgDown-#{$i} {
+    .o-col-lgDown-#{$i}, o-col-lgDown-#{$i} {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
       position: relative;
