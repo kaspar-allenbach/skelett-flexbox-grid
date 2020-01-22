@@ -6,101 +6,101 @@
 
 // first make the non responsive classes
 [class^="o-col"] {
-  &.u-shrink-true {
+  &.u-shrink-true, %u-shrink-true {
     flex-shrink: 1;
   }
-  &.u-shrink-false {
+  &.u-shrink-false, %u-shrink-false {
     flex-shrink: 0;
   }
 
-  &.u-grow-true {
+  &.u-grow-true, %u-grow-true {
     flex-grow: 1;
   }
-  &.u-grow-false {
+  &.u-grow-false, %u-grow-false {
     flex-grow: 0;
   }
 
   @include sm__up {
-    &.u-shrink-sm__up-true {
+    &.u-shrink-sm__up-true, %u-shrink-sm__up-true {
       flex-shrink: 1;
     }
-    &.u-shrink-sm__up-false {
+    &.u-shrink-sm__up-false, %u-shrink-sm__up-false {
       flex-shrink: 0;
     }
-    &.u-grow-sm__up-true {
+    &.u-grow-sm__up-true, %u-grow-sm__up-true {
       flex-grow: 1;
     }
-    &.u-grow-sm__up-false {
+    &.u-grow-sm__up-false, %u-grow-sm__up-false {
       flex-grow: 0;
     }
   }
   @include md__up {
-    &.u-shrink-md__up-true {
+    &.u-shrink-md__up-true, %u-shrink-md__up-true {
       flex-shrink: 1;
     }
-    &.u-shrink-md__up-false {
+    &.u-shrink-md__up-false, %u-shrink-md__up-false {
       flex-shrink: 0;
     }
-    &.u-grow-md__up-true {
+    &.u-grow-md__up-true, %u-grow-md__up-true {
       flex-grow: 1;
     }
-    &.u-grow-md__up-false {
+    &.u-grow-md__up-false, %u-grow-md__up-false {
       flex-grow: 0;
     }
   }
   @include lg__up {
-    &.u-shrink-lg__up-true {
+    &.u-shrink-lg__up-true, %u-shrink-lg__up-true {
       flex-shrink: 1;
     }
-    &.u-shrink-lg__up-false {
+    &.u-shrink-lg__up-false, %u-shrink-lg__up-false {
       flex-shrink: 0;
     }
-    &.u-grow-lg__up-true {
+    &.u-grow-lg__up-true, %u-grow-lg__up-true {
       flex-grow: 1;
     }
-    &.u-grow-lg__up-false {
+    &.u-grow-lg__up-false, %u-grow-lg__up-false {
       flex-grow: 0;
     }
   }
   @include sm__down {
-    &.u-shrink-sm__down-true {
+    &.u-shrink-sm__down-true, %u-shrink-sm__down-true {
       flex-shrink: 1;
     }
-    &.u-shrink-sm__down-false {
+    &.u-shrink-sm__down-false, %u-shrink-sm__down-false {
       flex-shrink: 0;
     }
-    &.u-grow-sm__down-true {
+    &.u-grow-sm__down-true, %u-grow-sm__down-true {
       flex-grow: 1;
     }
-    &.u-grow-sm__down-false {
+    &.u-grow-sm__down-false, %u-grow-sm__down-false {
       flex-grow: 0;
     }
   }
   @include md__down {
-    &.u-shrink-sm__down-true {
+    &.u-shrink-sm__down-true, %u-shrink-sm__down-true {
       flex-shrink: 1;
     }
-    &.u-shrink-sm__down-false {
+    &.u-shrink-sm__down-false, %u-shrink-sm__down-false {
       flex-shrink: 0;
     }
-    &.u-grow-sm__down-true {
+    &.u-grow-sm__down-true, %u-grow-sm__down-true {
       flex-grow: 1;
     }
-    &.u-grow-sm__down-false {
+    &.u-grow-sm__down-false, %u-grow-sm__down-false {
       flex-grow: 0;
     }
   }
   @include lg__down {
-    &.u-shrink-lg__down-true {
+    &.u-shrink-lg__down-true, %u-shrink-lg__down-true {
       flex-shrink: 1;
     }
-    &.u-shrink-lg__down-false {
+    &.u-shrink-lg__down-false, %u-shrink-lg__down-false {
       flex-shrink: 0;
     }
-    &.u-grow-lg__down-true {
+    &.u-grow-lg__down-true, %u-grow-lg__down-true {
       flex-grow: 1;
     }
-    &.u-grow-lg__down-false {
+    &.u-grow-lg__down-false, %u-grow-lg__down-false {
       flex-grow: 0;
     }
   }

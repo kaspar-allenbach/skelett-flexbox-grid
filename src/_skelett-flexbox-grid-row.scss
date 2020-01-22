@@ -1,13 +1,13 @@
 //flexbox row grids
 @for $i from 1 through $baseGrid {
-  &.o-row-col-#{$i} > [class="o-col"] {
+  &.o-row-col-#{$i} > [class="o-col"], %o-row-col-#{$i} > [class="o-col"] {
     flex-basis: ($i / $baseGrid * 100 + 0%);
     max-width: ($i / $baseGrid * 100 + 0%);
   }
 }
 @include sm__up {
   @for $i from 1 through $baseGrid {
-    &.o-row-col-sm-#{$i} > [class="o-col"] {
+    &.o-row-col-sm-#{$i} > [class="o-col"] %o-row-col-sm-#{$i} > [class="o-col"] {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
     }
@@ -15,7 +15,7 @@
 }
 @include md__up {
   @for $i from 1 through $baseGrid {
-    &.o-row-col-md-#{$i} > [class="o-col"] {
+    &.o-row-col-md-#{$i} > [class="o-col"], %o-row-col-md-#{$i} > [class="o-col"] {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
     }
@@ -23,7 +23,7 @@
 }
 @include lg__up {
   @for $i from 1 through $baseGrid {
-    &.o-row-col-lg-#{$i} > [class="o-col"] {
+    &.o-row-col-lg-#{$i} > [class="o-col"], %o-row-col-lg-#{$i} > [class="o-col"] {
       flex-basis: ($i / $baseGrid * 100 + 0%);
       max-width: ($i / $baseGrid * 100 + 0%);
     }

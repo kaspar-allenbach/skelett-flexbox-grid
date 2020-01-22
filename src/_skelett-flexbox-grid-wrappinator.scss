@@ -7,19 +7,19 @@
   }
 }
 
-.o-wrapper {
+.o-wrapper, %o-wrapper {
   display: block;
   position: relative;
-  &.o-full-wrapper {
+  &.o-full-wrapper, %o-full-wrapper {
     @include lg__up {
       max-width: $baseWrapSize;
       margin: 0 auto;
     }
   }
-  &.o-outer-wrapper {
+  &.o-outer-wrapper, %o-outer-wrapper {
     @include wrapSizer;
   }
-  &.o-inner-wrapper {
+  &.o-inner-wrapper, %o-inner-wrapper {
     @include wrapSizer(10);
   }
 }

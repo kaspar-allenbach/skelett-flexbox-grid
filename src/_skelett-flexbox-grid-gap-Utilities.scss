@@ -5,8 +5,7 @@
 //create order classes
 // first make the non responsive classes
 
-.o-flex {
-  &.u-gap {
+  .u-gap, %u-gap {
     margin-left: -$gridGap / 2;
     margin-right: -$gridGap / 2;
     > * {
@@ -15,7 +14,7 @@
     }
   }
   @include sm__up {
-    &.u-gap-sm__up {
+    .u-gap-sm__up {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -25,7 +24,7 @@
     }
   }
   @include md__up {
-    &.u-gap-md__up {
+    .u-gap-md__up {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -35,7 +34,7 @@
     }
   }
   @include lg__up {
-    &.u-gap-lg__up {
+    .u-gap-lg__up {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -45,7 +44,7 @@
     }
   }
   @include sm__down {
-    &.u-gap-sm__down {
+    .u-gap-sm__down {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -55,7 +54,7 @@
     }
   }
   @include md__down {
-    &.u-gap-md__down {
+    .u-gap-md__down {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -65,7 +64,7 @@
     }
   }
   @include lg__down {
-    &.u-gap-lg__down {
+    .u-gap-lg__down {
       margin-left: -$gridGap;
       margin-right: -$gridGap;
       > * {
@@ -74,4 +73,3 @@
       }
     }
   }
-}
