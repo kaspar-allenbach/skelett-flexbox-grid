@@ -1396,6 +1396,129 @@ Compiles to
   }
 }
 
+@media (min-width: 576px) {
+  .u-x-smUp-center {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-center {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-center {
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-around {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-around {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-around {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-between {
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-between {
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-between {
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-evenly {
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-evenly {
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-space-evenly {
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-flex-start {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-flex-start {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-flex-start {
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-flex-end {
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-flex-end {
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 576px) {
+  .u-x-smUp-flex-end {
+    -webkit-box-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .u-y-center {
   -webkit-box-align: center;
           align-items: center;

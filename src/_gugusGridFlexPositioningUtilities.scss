@@ -1,10 +1,11 @@
 //orientation position variables
 $flexPosXOptions: center, space-around, space-between, space-evenly, flex-start, flex-end;
 $flexPosYOptions: center, flex-start, flex-end;
+$mediaQueryHandles: smUp, mdUp, lgUp;
 
 //flex basis modifier
 .o-flex {
-  &.u-col-basis-auto {
+  &.u-col-basis-auto, %u-col-basis-auto {
      [class="o-col"] {
       flex-basis: auto;
       flex-grow: 0;
@@ -14,7 +15,7 @@ $flexPosYOptions: center, flex-start, flex-end;
 
 //flex-position
 @each $param in $flexPosXOptions {
-  .u-x-#{$param} { justify-content: $param; }
+  .u-x-#{$param}, %u-x-#{$param} { justify-content: $param; }
 }
 @each $param in $flexPosXOptions {
   @include smUp { .u-x-smUp-#{$param} {justify-content: $param;} }
@@ -23,6 +24,13 @@ $flexPosYOptions: center, flex-start, flex-end;
   @include smDown { .u-x-smDown-#{$param} {justify-content: $param;} }
   @include mdDown { .u-x-mdDown-#{$param} {justify-content: $param;} }
   @include lgDown { .u-x-lgDown-#{$param} {justify-content: $param;} }
+}
+
+@each $firstParam in $flexPosXOptions {
+
+  @each $secondParam in $mediaQueryHandles {
+    @include $secondParam { .u-x-smUp-#{$firstParam} {justify-content: $firstParam;} }
+  }
 }
 
 //flex-position
