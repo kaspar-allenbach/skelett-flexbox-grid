@@ -7,12 +7,7 @@
 
 .o-flex, %o-flex { @include flexUtility; }
 
-.o-col, %o-col, [class^="o-col"] {
-  flex-grow: 1;
-  flex-shrink:1;
-  flex-basis: 0;
-  position: relative;
-}
+
 .u-nowrap, %u-nowrap { flex-wrap: nowrap; }
 
 

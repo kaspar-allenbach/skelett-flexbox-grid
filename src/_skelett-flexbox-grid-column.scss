@@ -1,65 +1,101 @@
+$i: 1;
 //flexbox-grid-columns
-@for $i from 1 through $baseGrid {
-  .o-col-#{$i}, %o-col-#{$i} {
+@mixin colMixin($i, $colNumber: true) {
+  position: relative;
+  @if $colNumber {
     flex-basis: ($i / $baseGrid * 100 + 0%);
     max-width: ($i / $baseGrid * 100 + 0%);
-    position: relative;
+  } @else {
+    // non defined sizing directives
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-basis: 0;
   }
 }
 
+//undefined width sizing columns
+.o-col,
+%o-col,
+[class^="o-col"] {
+  @include colMixin($i, false);
+}
+
+
+@include sm__up {
+  .o-col-sm__up, %o-col-sm__up {@include colMixin($i, false); }
+}
+@include md__up {
+  .o-col-md__up, %o-col-md__up {@include colMixin($i, false); }
+}
+@include lg__up {
+  .o-col-md__up, %o-col-md__up {@include colMixin($i, false); }
+}
+
+@include sm__down {
+  .o-col-sm__down, %o-col-sm__down {@include colMixin($i, false); }
+}
+@include md__down {
+  .o-col-md__down, %o-col-md__down {@include colMixin($i, false); }
+}
+@include lg__down {
+  .o-col-lg__down, %o-col-lg__down {@include colMixin($i, false); }
+}
+
+
+//defined width sizing columns
+@for $i from 1 through $baseGrid {
+  .o-col-#{$i},
+  %o-col-#{$i} {
+    @include colMixin($i, true);
+  }
+}
 //media query Up
 @include sm__up {
   @for $i from 1 through $baseGrid {
-    .o-col-sm__up-#{$i}, %o-col-sm__up-#{$i} {
-      flex-basis: ($i / $baseGrid * 100 + 0%);
-      max-width: ($i / $baseGrid * 100 + 0%);
-      position: relative;
+    .o-col-sm__up-#{$i},
+    %o-col-sm__up-#{$i} {
+      @include colMixin($i, true);
     }
   }
 }
 @include md__up {
   @for $i from 1 through $baseGrid {
-    .o-col-md__up-#{$i}, %o-col-md__up-#{$i} {
-      flex-basis: ($i / $baseGrid * 100 + 0%);
-      max-width: ($i / $baseGrid * 100 + 0%);
-      position: relative;
+    .o-col-md__up-#{$i},
+    %o-col-md__up-#{$i} {
+      @include colMixin($i, true);
     }
   }
 }
 @include lg__up {
   @for $i from 1 through $baseGrid {
-    .o-col-lg__up-#{$i}, %o-col-lg__up-#{$i} {
-      flex-basis: ($i / $baseGrid * 100 + 0%);
-      max-width: ($i / $baseGrid * 100 + 0%);
-      position: relative;
+    .o-col-lg__up-#{$i},
+    %o-col-lg__up-#{$i} {
+      @include colMixin($i, true);
     }
   }
 }
 //media query down
 @include sm__down {
   @for $i from 1 through $baseGrid {
-    .o-col-sm__down-#{$i}, %o-col-sm__down-#{$i} {
-      flex-basis: ($i / $baseGrid * 100 + 0%);
-      max-width: ($i / $baseGrid * 100 + 0%);
-      position: relative;
+    .o-col-sm__down-#{$i},
+    %o-col-sm__down-#{$i} {
+      @include colMixin($i, true);
     }
   }
 }
 @include md__down {
   @for $i from 1 through $baseGrid {
-    .o-col-md__down-#{$i}, %o-col-md__down-#{$i} {
-      flex-basis: ($i / $baseGrid * 100 + 0%);
-      max-width: ($i / $baseGrid * 100 + 0%);
-      position: relative;
+    .o-col-md__down-#{$i},
+    %o-col-md__down-#{$i} {
+      @include colMixin($i, true);
     }
   }
 }
 @include lg__down {
   @for $i from 1 through $baseGrid {
-    .o-col-lg__down-#{$i}, o-col-lg__down-#{$i} {
-      flex-basis: ($i / $baseGrid * 100 + 0%);
-      max-width: ($i / $baseGrid * 100 + 0%);
-      position: relative;
+    .o-col-lg__down-#{$i},
+    o-col-lg__down-#{$i} {
+      @include colMixin($i, true);
     }
   }
 }
