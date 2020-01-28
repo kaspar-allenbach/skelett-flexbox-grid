@@ -19,7 +19,7 @@
   &.u-grow-false, %u-grow-false {
     flex-grow: 0;
   }
-
+  //media query classes
   @include sm__up {
     &.u-shrink-sm__up-true, %u-shrink-sm__up-true {
       flex-shrink: 1;

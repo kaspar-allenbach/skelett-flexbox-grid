@@ -37,3 +37,29 @@ $flexPosYOptions: $flexPosXOptions;
   @include md__down { .u-y-md__down-#{$param} %u-y-md__down-#{$param} {align-items: $param;} }
   @include lg__down { .u-y-lg__down-#{$param} %u-y-lg__down-#{$param} {align-items: $param;} }
 }
+
+//self classes on X axis
+@each $param in $flexPosXOptions {
+  .u-x-self-#{$param}, %u-x-self-#{$param} { justify-content: $param; }
+}
+@each $param in $flexPosXOptions {
+  @include sm__up { .u-x-sm__up-self-#{$param} %u-x-sm__up-self-#{$param} {justify-content: $param;} }
+  @include md__up { .u-x-md__up-self-#{$param} %u-x-md__up-self-#{$param} {justify-content: $param;} }
+  @include lg__up { .u-x-lg__up-self-#{$param} %u-x-lg__up-self-#{$param} {justify-content: $param;} }
+  @include sm__down { .u-x-sm__down-self-#{$param} %u-x-sm__down-self-#{$param} {justify-content: $param;} }
+  @include md__down { .u-x-md__down-self-#{$param} %u-x-md__down-self-#{$param} {justify-content: $param;} }
+  @include lg__down { .u-x-lg__down-self-#{$param} %u-x-lg__down-self-#{$param} {justify-content: $param;} }
+}
+
+//flex-position on y axis
+@each $param in $flexPosYOptions {
+  .u-y-self-#{$param}, %u-y-self-#{$param} { align-items: $param; }
+}
+@each $param in $flexPosYOptions {
+  @include sm__up { .u-y-sm__up-self-#{$param} %u-y-sm__up-self-#{$param} {align-items: $param;} }
+  @include md__up { .u-y-md__up-self-#{$param} %u-y-md__up-self-#{$param} {align-items: $param;} }
+  @include lg__up { .u-y-lg__up-self-#{$param} %u-y-lg__up-self-#{$param} {align-items: $param;} }
+  @include sm__down { .u-y-sm__down-self-#{$param} %u-y-sm__down-self-#{$param} {align-items: $param;} }
+  @include md__down { .u-y-md__down-self-#{$param} %u-y-md__down-self-#{$param} {align-items: $param;} }
+  @include lg__down { .u-y-lg__down-self-#{$param} %u-y-lg__down-self-#{$param} {align-items: $param;} }
+}
