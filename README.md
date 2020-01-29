@@ -1,4 +1,6 @@
-# gugus-grid
+# do not use! under heavy development
+
+# skelett flexbox grid
 Minimal grid
 
 This is a bare-bones approach for a css-only forntend grid without the fuss and overhead of current frameworks.
