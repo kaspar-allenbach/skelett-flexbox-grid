@@ -5,71 +5,76 @@
 //create order classes
 // first make the non responsive classes
 
-  .u-gap, %u-gap {
-    margin-left: -$gridGap / 2;
-    margin-right: -$gridGap / 2;
-    > * {
-      padding-left: $gridGap / 2;
-      padding-right: $gridGap / 2;
-    }
-  }
-  @include sm__up {
-    .u-gap-sm__up {
-      margin-left: -$gridGap;
-      margin-right: -$gridGap;
-      > * {
-        padding-left: $gridGap;
-        padding-right: $gridGap;
-      }
-    }
-  }
-  @include md__up {
-    .u-gap-md__up {
-      margin-left: -$gridGap;
-      margin-right: -$gridGap;
-      > * {
-        padding-left: $gridGap;
-        padding-right: $gridGap;
-      }
-    }
-  }
-  @include lg__up {
-    .u-gap-lg__up {
-      margin-left: -$gridGap;
-      margin-right: -$gridGap;
-      > * {
-        padding-left: $gridGap;
-        padding-right: $gridGap;
-      }
-    }
-  }
-  @include sm__down {
-    .u-gap-sm__down {
-      margin-left: -$gridGap;
-      margin-right: -$gridGap;
-      > * {
-        padding-left: $gridGap;
-        padding-right: $gridGap;
-      }
-    }
-  }
-  @include md__down {
-    .u-gap-md__down {
-      margin-left: -$gridGap;
-      margin-right: -$gridGap;
-      > * {
-        padding-left: $gridGap;
-        padding-right: $gridGap;
-      }
-    }
-  }
-  @include lg__down {
-    .u-gap-lg__down {
-      margin-left: -$gridGap;
-      margin-right: -$gridGap;
-      > * {
-        padding-left: $gridGap;
-        padding-right: $gridGap;
-      }
-    }
-  }
+// grid gap is not yet a thing
+// I hate the bootstrap solution to offset the parent with negative margins
+// therfore I did not activate this for now.
+
+
+  // .u-gap, %u-gap {
+  //   margin-left: -$gridGap / 2;
+  //   margin-right: -$gridGap / 2;
+  //   > * {
+  //     padding-left: $gridGap / 2;
+  //     padding-right: $gridGap / 2;
+  //   }
+  // }
+  // @include sm__up {
+  //   .u-gap-sm__up {
+  //     margin-left: -$gridGap;
+  //     margin-right: -$gridGap;
+  //     > * {
+  //       padding-left: $gridGap;
+  //       padding-right: $gridGap;
+  //     }
+  //   }
+  // }
+  // @include md__up {
+  //   .u-gap-md__up {
+  //     margin-left: -$gridGap;
+  //     margin-right: -$gridGap;
+  //     > * {
+  //       padding-left: $gridGap;
+  //       padding-right: $gridGap;
+  //     }
+  //   }
+  // }
+  // @include lg__up {
+  //   .u-gap-lg__up {
+  //     margin-left: -$gridGap;
+  //     margin-right: -$gridGap;
+  //     > * {
+  //       padding-left: $gridGap;
+  //       padding-right: $gridGap;
+  //     }
+  //   }
+  // }
+  // @include sm__down {
+  //   .u-gap-sm__down {
+  //     margin-left: -$gridGap;
+  //     margin-right: -$gridGap;
+  //     > * {
+  //       padding-left: $gridGap;
+  //       padding-right: $gridGap;
+  //     }
+  //   }
+  // }
+  // @include md__down {
+  //   .u-gap-md__down {
+  //     margin-left: -$gridGap;
+  //     margin-right: -$gridGap;
+  //     > * {
+  //       padding-left: $gridGap;
+  //       padding-right: $gridGap;
+  //     }
+  //   }
+  // }
+  // @include lg__down {
+  //   .u-gap-lg__down {
+  //     margin-left: -$gridGap;
+  //     margin-right: -$gridGap;
+  //     > * {
+  //       padding-left: $gridGap;
+  //       padding-right: $gridGap;
+  //     }
+  //   }
+  // }
