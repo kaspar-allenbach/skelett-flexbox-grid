@@ -3,114 +3,86 @@
 # skelett flexbox grid
 Minimal grid
 
-This is a bare-bones approach for a css-only forntend grid without the fuss and overhead of current frameworks.
+This is a flexbox toolset library
+It is meant to be a barebones (German: Skelett) flexbox framework without any styling to not interfere with the rest of your project
+The idea is also that you can use it to save aging websites by just drop in this library and minimise css injections.
 
-## Customisation
-For customisation adjust the following variables:
-```
-// all classes are generated from this numer
-
-  $baseGrid: 12; 
-  
- // the gap between the flexbox elements
- // (the outer gap is reset by negative margins)
- 
-  $gridGap: 10px; 
-```
 
 ## Flebox Grid
+By default the grid is a `$baseGrid: 12;` 12 column grid.
+
+## Install
+*NPM* `npm i skelett-flexbox-grid -s`
+*Oldschool* `cdn link`
+
+# How To
 
 ### Basic Grid:
-The Basic flexbox grid markup
+That's the basic flexbox grid markup
+Then just add utility classes as you need them (See Table)
 
 ```
-<div class="flexGrid">
-  <div class="col"></div>
-  <div class="col"></div>
-  <div class="col"></div>
+<div class="o-flex"> // initiate the flexbox parent element
+  <div class="o-col"></div> // initiate the flexbox child element
+  <div class="o-col"></div>
+  <div class="o-col"></div>
 </div>
 
 ```
+
 
 ### Standardised Sizing
 If you want to control the width of the grid elements add classes with a number like so: `col{x}`
 
 ```
-<div class="flexGrid">
-  <div class="col1">Column with full width</div>
-  <div class="col4">Column with 1/4 width</div>
-  <div class="col">fills the rest of the row</div>
+<div class="o-flex">
+  <div class="o-col-12">Column with full width</div>
+  <div class="o-col-4">Column with 1/4 width</div>
+  <div class="o-col">fills the rest of the row</div>
 </div>
 
 ```
 
 #### Responsive grid
-Just add media query based classes to your grid:
+Just add media query based classes to your grid
+This library juses the skelett-media-query library
+All classes are avalable with the media query string `xx_up xx_down`
+
 ```
-<div class="flexGrid">
-  <div class="col1 colMd4 colLg6">Column with full width. 1/4 on Md size and 1/6 on Lg size</div>
+<div class="o-flex">
+  <div class="o-col-1 o-col-sm_up-4 o-col-md_up-2">Column with full width. 1/4 on Md size and 1/6 on Lg size</div>
   <div class="col">fills the rest of the row</div>
 </div>
 
 ```
 ### Row Columns
-You can also define the grid size on the parent element with `flexGrid rowCol{x}`
+You can also define the grid size on the parent element with `o-felx u-row-col-{x}`
 ```
-<div class="flexGrid rowCol4">
-  <div class="col">1/4 column</div>
-  <div class="col">1/4 column</div>
-  <div class="col col2">overrides the parent directive/div>
+<div class="o-flex u-row-col-4">
+  <div class="o-col">1/4 column</div>
+  <div class="o-col">1/4 column</div>
+  <div class="o-col col2">overrides the parent directive/div>
 </div>
 
 ```
-#### Responsive Row Columns
-You can also add repsonsive row Columns: ```<div class="flexGrid rowCol4 rowColLg4">```
 
 ## Utility first vs. css abstraction
-You can also write the whole thing in scss and use your own classes in the html markup:
+In case you don't want/can't change the html maruk everything is avalabe as extends as well:
 
 ### Column Row
 ```
 .yourOwnClass {
-  @include rowCol(x);
-  @include rowColSm(x);
-  @include rowColMd(x);
+  @extend %o-flex;
+  @include %u-row-sm_up-4;
+  @include %u-row-lg_up-2;
 }
 ```
 
+# Helpers
+There are helper classes for all the stuff
 
-### Child element
-```
-.yourOwnClass {
-  @include col(x);
-  @include colSm(x);
-  @include coLg(x);
-}
-```
-## Positioning
-There are helper classes if you want to position your stuff:
+- *Direction* `u-direction-{css-directive}` eg. `u-direction-column-reverse`
+- *Gap* `Not implemented yet. I'm just no happy with the negative margin solution which is used everywhere`
+- 
 
-Naming: `.{orientation}-{css-directive}`
-
-Example: `x-space-between`or `y-center`
-
-Responsive Positioning: `.{orientation}-{breakpoint}-{css-directive}`
-
-Example: `x-md-space-between`or `y-sm-center`
-
-```
-<div class="flexGrid rowCol3 x-space-between">
-  <div class="col"><p>blabla</p></div>
-  <div class="col">blabla blabla blabla blabla blabla blabla blabla blabla</div>
-</div>
-```
-And as always you can also use your own classes like so:
-
-```
-.yourOwnClass {
-  @include x(space-between);
-  @include x-sm(space-evenly);
-  @include x-lg(center);
-}
-```
 
