@@ -43,9 +43,9 @@ If you want to control the width of the grid elements add classes with a number 
 
 ```
 
-#### Responsive grid
+## Responsive grid
 Just add media query based classes to your grid
-This library juses the skelett-media-query library
+This library juses the [skelett-media-query](https://github.com/kaspar-allenbach/skelett-media-queries) library
 All classes are avalable with the media query string `xx_up xx_down`
 
 ```
