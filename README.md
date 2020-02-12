@@ -45,7 +45,7 @@ If you want to control the width of the grid elements add classes with a number 
 
 ## Responsive grid
 Just add media query based classes to your grid
-This library juses the [skelett-media-query](https://github.com/kaspar-allenbach/skelett-media-queries) library
+This library juses the [skelett-media-query](https://github.com/kaspar-allenbach/skelett-media-queries) library.
 All classes are avalable with the media query string `xx_up xx_down`
 
 ```
@@ -87,5 +87,10 @@ There are helper classes for all the stuff
 - *Sizing* `u-shrink-true`, `u-shrink-false`
 
 
+# Avalable Classes
 
+| non-responsive class  | XL | LG | MD | SM | XS
+| ------------- | ------------- |
+| `.o-flex`  | `.o-flex-xl__up` <br>`-o-flex-xl__down`  | `.o-flex-lg__up` <br>`-o-flex-lg__down` | `.o-flex-md__up` <br>`-o-flex-md__down`
+| Content Cell  | Content Cell  |
 
