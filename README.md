@@ -89,8 +89,6 @@ There are helper classes for all the stuff
 
 # Avalable Classes
 
-| non-responsive class  | XL | LG | MD | SM | XS
-| ------------- | ------------- |
-| `.o-flex`  | `.o-flex-xl__up` <br>`-o-flex-xl__down`  | `.o-flex-lg__up` <br>`-o-flex-lg__down` | `.o-flex-md__up` <br>`-o-flex-md__down`
-| Content Cell  | Content Cell  |
+| non-responsive class  | XL | LG | MD | SM | XS |
+| `.o-flex`  | `.o-flex-xl__up` `-o-flex-xl__down`  | `.o-flex-lg__up` `-o-flex-lg__down` | `.o-flex-md__up` `-o-flex-md__down` |
 
