@@ -1,0 +1,27 @@
+$flexSelfXoptions: auto; //because justify-self is not a thing. It is acheived with margin: auto
+
+//self classes on X axis
+@each $param in $flexSelfXoptions {
+  .u-x-self-#{$param}, %u-x-self-#{$param} { margin: $param; }
+}
+@each $param in $flexSelfXoptions {
+  @include sm__up { .u-x-sm__up-self-#{$param}, %u-x-sm__up-self-#{$param} {margin: $param;} }
+  @include md__up { .u-x-md__up-self-#{$param}, %u-x-md__up-self-#{$param} {margin: $param;} }
+  @include lg__up { .u-x-lg__up-self-#{$param}, %u-x-lg__up-self-#{$param} {margin: $param;} }
+  @include sm__down { .u-x-sm__down-self-#{$param}, %u-x-sm__down-self-#{$param} {margin: $param;} }
+  @include md__down { .u-x-md__down-self-#{$param}, %u-x-md__down-self-#{$param} {margin: $param;} }
+  @include lg__down { .u-x-lg__down-self-#{$param}, %u-x-lg__down-self-#{$param} {margin: $param;} }
+}
+
+//flex-position on y axis
+@each $param in $flexPosYOptions {
+  .u-y-self-#{$param}, %u-y-self-#{$param} { align-self: $param; }
+}
+@each $param in $flexPosYOptions {
+  @include sm__up { .u-y-sm__up-self-#{$param}, %u-y-sm__up-self-#{$param} {align-self: $param;} }
+  @include md__up { .u-y-md__up-self-#{$param}, %u-y-md__up-self-#{$param} {align-self: $param;} }
+  @include lg__up { .u-y-lg__up-self-#{$param}, %u-y-lg__up-self-#{$param} {align-self: $param;} }
+  @include sm__down { .u-y-sm__down-self-#{$param}, %u-y-sm__down-self-#{$param} {align-self: $param;} }
+  @include md__down { .u-y-md__down-self-#{$param}, %u-y-md__down-self-#{$param} {align-self: $param;} }
+  @include lg__down { .u-y-lg__down-self-#{$param}, %u-y-lg__down-self-#{$param} {align-self: $param;} }
+}
