@@ -4,7 +4,8 @@
 Minimal grid
 
 This is a flexbox toolset library
-It is meant to be a barebones (German: Skelett) flexbox framework without any styling to not interfere with the rest of your project
+It is meant to be a barebones (German: Skelett) flexbox framework without any styling to not interfere with the rest of your project.
+
 The idea is also that you can use it to save aging websites by just drop in this library and minimise css injections.
 
 
@@ -13,11 +14,10 @@ By default the grid is a `$baseGrid: 12;` 12 column grid.
 
 ## Install
 *NPM* `npm i skelett-flexbox-grid -s`
-*Oldschool* `cdn link`
 
 # How To
 
-### Basic Grid:
+## Basic Grid:
 That's the basic flexbox grid markup
 Then just add utility classes as you need them (See Table)
 
@@ -31,8 +31,8 @@ Then just add utility classes as you need them (See Table)
 ```
 
 
-### Standardised Sizing
-If you want to control the width of the grid elements add classes with a number like so: `col{x}`
+## Standardised Sizing
+If you want to control the width of the grid elements add classes with a number like so: `o-col-{x}`
 
 ```
 <div class="o-flex">
@@ -56,7 +56,7 @@ All classes are avalable with the media query string `xx_up xx_down`
 
 ```
 ### Row Columns
-You can also define the grid size on the parent element with `o-felx u-row-col-{x}`
+You can also define the grid size on the parent element with `o-flex u-row-col-{x}`
 ```
 <div class="o-flex u-row-col-4">
   <div class="o-col">1/4 column</div>
@@ -66,10 +66,9 @@ You can also define the grid size on the parent element with `o-felx u-row-col-{
 
 ```
 
-## Utility first vs. css abstraction
+## Extends
 In case you don't want/can't change the html maruk everything is avalabe as extends as well:
 
-### Column Row
 ```
 .yourOwnClass {
   @extend %o-flex;
@@ -83,6 +82,10 @@ There are helper classes for all the stuff
 
 - *Direction* `u-direction-{css-directive}` eg. `u-direction-column-reverse`
 - *Gap* `Not implemented yet. I'm just no happy with the negative margin solution which is used everywhere`
-- 
+- *Order* `u-col-order-{X} eg. `u-col-order-sm__up-4`
+- *Positioning* `u-x-{X}` `u-i-{Y}` eg. `u-x-space-between`. X & Y refer to the standard axis.
+- *Sizing* `u-shrink-true`, `u-shrink-false`
+
+
 
 
