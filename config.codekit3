@@ -206,6 +206,19 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"/src/_skelett-flexbox-grid-positioning-self-utilities.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/dist/_skelett-flexbox-grid-positioning-self-utilities.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"/src/_skelett-flexbox-grid-positioning-utilities.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -254,19 +267,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/dist/_skelett-flexbox-grid-vars.css",
-		"oF": 0,
-		"oS": 1,
-		"uL": 1
-		},
-	"/src/_skelett-flexbox-grid-wrappinator.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/dist/_skelett-flexbox-grid-wrappinator.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
