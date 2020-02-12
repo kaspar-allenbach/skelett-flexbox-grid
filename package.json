@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/kaspar-allenbach/skelett-flexbox-grid#readme",
   "dependencies": {
-    "skelett-media-queries": "file:../skelett-media-queries"
+    "skelett-media-queries": "git+https://github.com/kaspar-allenbach/skelett-media-queries.git"
   }
 }
