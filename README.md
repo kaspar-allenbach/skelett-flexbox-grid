@@ -91,5 +91,6 @@ There are helper classes for all the stuff
 
 | non-responsive class  | XL | LG | MD | SM | XS |
 | --------------------- | --- | --- | --- | --- | --- |
-| `.o-flex`  | `.o-flex-xl__up` `-o-flex-xl__down`  | `.o-flex-lg__up` `-o-flex-lg__down` | `.o-flex-md__up` `-o-flex-md__down` |
+| `.o-flex`  | `.o-flex-xl__up`| `.o-flex-lg__up` | `.o-flex-md__up` | `.o-flex-sm__up` | `.o-flex-xs__up` |
+| `.o-col`  | `.o-col-xl__up`| `.o-col-lg__up` | `.o-col-md__up` | `.o-col-sm__up` | `.o-col-xs__up` |
 
